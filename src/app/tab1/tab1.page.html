@@ -1,17 +1,127 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-toolbar>
+  <ion-grid>
+    <ion-list>
+      <ion-item>
+        <ion-col>
+          <h1>Nino</h1>
+        </ion-col>
+        <ion-col>
+          <h1>Produto</h1>
+        </ion-col>
+        <ion-col>
+          <h1>Preços</h1>
+        </ion-col>
+        <ion-col>
+          <h1>Entrar</h1>
+        </ion-col>
+        <ion-col>
+          <h1>Cadastrar</h1>
+        </ion-col>
+      </ion-item>
+    </ion-list>
+  </ion-grid>
+</ion-toolbar>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <h1>O melhor para o futuro de sua Criança!!</h1>
+  <br />
+  <div>
+    <button>Experimente nosso app</button><br /><br />
+    <button>Veja nossos planos</button>
+  </div>
+  <br /><br />
+  <div class="Header_body"><h1>aaaaaaaaaaaaaaaa</h1></div>
+  <br />
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <!--Texto imagens-->
+  <div class="grupoImgText">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div class="img1Text1">
+            <div class="titulo_imagens"><h2>Titulo aleatorio site1</h2></div>
+            <div class="texto_imagens">
+              <h3>Texto aleatorio de para o site1</h3>
+            </div>
+            <img src="/img1" alt="img1home" />
+          </div>
+        </ion-col>
+
+        <ion-col>
+          <div class="img2Text2">
+            <div class="titulo_imagens"><h2>Titulo aleatorio site2</h2></div>
+            <div class="texto_imagens">
+              <h3>Texto aleatorio de para o site2</h3>
+            </div>
+            <img src="/img2" alt="img2home" />
+          </div>
+        </ion-col>
+        <ion-col>
+          <div class="img3Text3">
+            <div class="titulo_imagens"><h2>Titulo aleatorio site3</h2></div>
+            <div class="texto_imagens">
+              <h3>Texto aleatorio de para o site3</h3>
+            </div>
+            <img src="/img3" alt="img3home" />
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <div>
+    <img src="/video" alt="video" />
+  </div>
+
+  <div class="img4Text4">
+    <div class="titulo_imagens"><h2>Titulo aleatorio site4</h2></div>
+    <div class="texto_imagens">
+      <h3>Texto aleatorio de para o site4</h3>
+    </div>
+    <img src="/img4" alt="img4home" />
+  </div>
+
+  <div class="img5Text5Accordion">
+    <div class="titulo_imagens"><h2>Titulo aleatorio site5</h2></div>
+    <div class="texto_imagens"><h3>Texto aleatorio de para o site5</h3></div>
+    <ion-accordion-group>
+      <ion-accordion value="first">
+        <ion-item slot="header" color="light">
+          <ion-label>First Accordion</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">First Content</div>
+      </ion-accordion>
+      <ion-accordion value="second">
+        <ion-item slot="header" color="light">
+          <ion-label>Second Accordion</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">Second Content</div>
+      </ion-accordion>
+      <ion-accordion value="third">
+        <ion-item slot="header" color="light">
+          <ion-label>Third Accordion</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">Third Content</div>
+      </ion-accordion>
+    </ion-accordion-group>
+
+    <img src="/img5" alt="img5home" />
+  </div>
+
+  <div class="cardsPaiscomTitulo">
+    <div class="titulo_cardsPais"><h2>Titulo aleatorio Pais</h2></div>
+<div class="cardPais">
+    <ion-card>
+  <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+  <ion-card-header>
+    <ion-card-title>Card Title</ion-card-title>
+    <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content>
+    Here's a small text description for the card content. Nothing more, nothing less.
+  </ion-card-content>
+</ion-card>
+</div>
+  </div>
 </ion-content>
