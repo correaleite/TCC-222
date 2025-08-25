@@ -1,17 +1,42 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-toolbar>
+  <ion-grid>
+    <ion-list>
+      <ion-item>
+
+        <ion-col>
+    <ion-tab-button tab="tab1">
+            <h1>Nino</h1>
+          </ion-tab-button>
+        </ion-col>
+        <ion-col>
+          <ion-accordion-group>
+            <ion-accordion value="first">
+              <ion-item slot="header" >
+                <ion-label>First Accordion</ion-label>
+              </ion-item>
+               <div class="ion-padding" slot="content">First Content</div>
+            </ion-accordion>
+          </ion-accordion-group>
+        </ion-col>
+        <ion-col>
+          <ion-tab-button tab="tab2">
+            <h1>Preços</h1>
+          </ion-tab-button>
+        </ion-col>
+      
+
+        <ion-col>
+          <h1>Entrar</h1>
+        </ion-col>
+        <ion-col>
+          <h1>Cadastrar</h1>
+        </ion-col>
+
+      </ion-item>
+    </ion-list>
+  </ion-grid>
+</ion-toolbar>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+<h1>ola mundo</h1>
 </ion-content>

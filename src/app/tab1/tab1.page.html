@@ -1,26 +1,59 @@
+<style>
+  .cardPais {
+    width: 85%;
+  }
+
+  .entrar{
+    padding-left: 10%;
+  }
+  .cadastrar{
+  padding-right: 10%;
+  }
+
+</style>
+
+
 <ion-toolbar>
   <ion-grid>
     <ion-list>
       <ion-item>
         <ion-col>
-          <h1>Nino</h1>
+          <ion-tab-button tab="tab1">
+            <h1>Nino</h1>
+          </ion-tab-button>
         </ion-col>
         <ion-col>
-          <h1>Produto</h1>
+          <ion-accordion-group>
+            <ion-accordion value="first">
+              <ion-item slot="header">
+                <ion-label>Produto</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">First Content</div>
+            </ion-accordion>
+          </ion-accordion-group>
         </ion-col>
         <ion-col>
-          <h1>Preços</h1>
+          <ion-tab-button tab="tab2">
+            <h1>Preços</h1>
+          </ion-tab-button>
         </ion-col>
-        <ion-col>
-          <h1>Entrar</h1>
+
+        <ion-col class="entrar">
+          <ion-tab-button tab="tab2">
+            <h1>Entrar</h1>
+          </ion-tab-button>
         </ion-col>
-        <ion-col>
-          <h1>Cadastrar</h1>
+        <ion-col class="cadastrar">
+          <ion-tab-button tab="tab2">
+            <h1>Cadastrar</h1>
+          </ion-tab-button>
         </ion-col>
       </ion-item>
     </ion-list>
   </ion-grid>
 </ion-toolbar>
+
+<div class="ion-padding" id="first" slot="content">First Content</div>
 
 <ion-content [fullscreen]="true">
   <h1>O melhor para o futuro de sua Criança!!</h1>
@@ -34,48 +67,58 @@
   <br />
 
   <!--Texto imagens-->
-  <div class="grupoImgText">
-    <ion-grid>
-      <ion-row>
-        <ion-col>
-          <div class="img1Text1">
+  <div class="grupoImgText" style="margin-left: 20%">
+    <div class="img1Text1">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
             <div class="titulo_imagens"><h2>Titulo aleatorio site1</h2></div>
             <div class="texto_imagens">
               <h3>Texto aleatorio de para o site1</h3>
             </div>
+          </ion-col>
+          <ion-col>
             <img src="/img1" alt="img1home" />
-          </div>
-        </ion-col>
-
-        <ion-col>
-          <div class="img2Text2">
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <br /><br />
+    <div class="img2Text2">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <img src="/img2" alt="img2home" />
+          </ion-col>
+          <ion-col>
             <div class="titulo_imagens"><h2>Titulo aleatorio site2</h2></div>
             <div class="texto_imagens">
               <h3>Texto aleatorio de para o site2</h3>
             </div>
-            <img src="/img2" alt="img2home" />
-          </div>
-        </ion-col>
-        <ion-col>
-          <div class="img3Text3">
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <br /><br />
+    <div class="img3Text3">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
             <div class="titulo_imagens"><h2>Titulo aleatorio site3</h2></div>
             <div class="texto_imagens">
               <h3>Texto aleatorio de para o site3</h3>
             </div>
+          </ion-col>
+          <ion-col>
             <img src="/img3" alt="img3home" />
-          </div>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
   </div>
-
+  <br />
   <div>
-    <img src="/video" alt="video" />
-  </div>
-
-  <div class="img4Text4">
-    <div class="titulo_imagens"><h2>Titulo aleatorio site4</h2></div>
-    <div class="texto_imagens">
+    <div class="texto_imagdiv class=texto_imagens">
       <h3>Texto aleatorio de para o site4</h3>
     </div>
     <img src="/img4" alt="img4home" />
@@ -91,12 +134,14 @@
         </ion-item>
         <div class="ion-padding" slot="content">First Content</div>
       </ion-accordion>
+
       <ion-accordion value="second">
         <ion-item slot="header" color="light">
           <ion-label>Second Accordion</ion-label>
         </ion-item>
         <div class="ion-padding" slot="content">Second Content</div>
       </ion-accordion>
+
       <ion-accordion value="third">
         <ion-item slot="header" color="light">
           <ion-label>Third Accordion</ion-label>
@@ -110,18 +155,76 @@
 
   <div class="cardsPaiscomTitulo">
     <div class="titulo_cardsPais"><h2>Titulo aleatorio Pais</h2></div>
-<div class="cardPais">
-    <ion-card>
-  <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
-  <ion-card-header>
-    <ion-card-title>Card Title</ion-card-title>
-    <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-  </ion-card-header>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div class="cardPais">
+            <ion-card>
+              <img
+                alt="Silhouette of mountains"
+                src="https://ionicframework.com/docs/img/demos/card-media.png"
+              />
+              <ion-card-header>
+                <ion-card-title>Card Title</ion-card-title>
+                <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+              </ion-card-header>
 
-  <ion-card-content>
-    Here's a small text description for the card content. Nothing more, nothing less.
-  </ion-card-content>
-</ion-card>
-</div>
+              <ion-card-content>
+                Here's a small text description for the card content. Nothing
+                more, nothing less.
+              </ion-card-content>
+            </ion-card>
+          </div>
+        </ion-col>
+
+        <ion-col>
+          <div class="cardPais">
+            <ion-card>
+              <img
+                alt="Silhouette of mountains"
+                src="https://ionicframework.com/docs/img/demos/card-media.png"
+              />
+              <ion-card-header>
+                <ion-card-title>Card Title</ion-card-title>
+                <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+              </ion-card-header>
+
+              <ion-card-content>
+                Here's a small text description for the card content. Nothing
+                more, nothing less.
+              </ion-card-content>
+            </ion-card>
+          </div>
+        </ion-col>
+
+        <ion-col>
+          <div class="cardPais">
+            <ion-card>
+              <img
+                alt="Silhouette of mountains"
+                src="https://ionicframework.com/docs/img/demos/card-media.png"
+              />
+              <ion-card-header>
+                <ion-card-title>Card Title</ion-card-title>
+                <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+              </ion-card-header>
+
+              <ion-card-content>
+                Here's a small text description for the card content. Nothing
+                more, nothing less.
+              </ion-card-content>
+            </ion-card>
+          </div>
+  /     </ion-col>
+      </ion-row>
+    </ion-grid>
   </div>
+
+  <div class="criarConta">
+    <div class="titulo_imagens"><h2>Criar sua Conta</h2></div>
+
+    <img src="/imgConta" alt="imgConta" />
+  </div>
+
+  <ion-button shape="round">Cadastrar-se</ion-button>
 </ion-content>
