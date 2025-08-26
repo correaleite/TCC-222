@@ -9,6 +9,11 @@
   .cadastrar{
   padding-right: 10%;
   }
+  .ion-padding{
+    display: flex;
+
+
+  }
 
 </style>
 
@@ -19,33 +24,45 @@
       <ion-item>
         <ion-col>
           <ion-tab-button tab="tab1">
-            <h1>Nino</h1>
+            <h2>Nino</h2>
           </ion-tab-button>
         </ion-col>
+
+
         <ion-col>
-          <ion-accordion-group>
+  <ion-accordion-group>
             <ion-accordion value="first">
               <ion-item slot="header">
                 <ion-label>Produto</ion-label>
               </ion-item>
-              <div class="ion-padding" slot="content">First Content</div>
+              <ion-tab-button tab="tab3" slot="content">
+            <h4>Por que</h4>
+          </ion-tab-button>
+               <ion-tab-button tab="tab2" slot="content">
+            <h4>Recursos</h4>
+          </ion-tab-button>
+            <ion-tab-button tab="tab4" slot="content">
+            <h4>Começando</h4>
+          </ion-tab-button>
             </ion-accordion>
           </ion-accordion-group>
         </ion-col>
+
+
         <ion-col>
-          <ion-tab-button tab="tab2">
-            <h1>Preços</h1>
+          <ion-tab-button tab="#">
+            <h5>Preços</h5>
           </ion-tab-button>
         </ion-col>
 
         <ion-col class="entrar">
-          <ion-tab-button tab="tab2">
-            <h1>Entrar</h1>
+          <ion-tab-button tab="#">
+            <h5>Entrar</h5>
           </ion-tab-button>
         </ion-col>
         <ion-col class="cadastrar">
-          <ion-tab-button tab="tab2">
-            <h1>Cadastrar</h1>
+          <ion-tab-button tab="#">
+            <h5>Cadastrar</h5>
           </ion-tab-button>
         </ion-col>
       </ion-item>
@@ -53,9 +70,12 @@
   </ion-grid>
 </ion-toolbar>
 
-<div class="ion-padding" id="first" slot="content">First Content</div>
+
+
 
 <ion-content [fullscreen]="true">
+
+
   <h1>O melhor para o futuro de sua Criança!!</h1>
   <br />
   <div>
@@ -67,7 +87,7 @@
   <br />
 
   <!--Texto imagens-->
-  <div class="grupoImgText" style="margin-left: 20%">
+  <div class="grupoImgText" >
     <div class="img1Text1">
       <ion-grid>
         <ion-row>
@@ -109,22 +129,36 @@
               <h3>Texto aleatorio de para o site3</h3>
             </div>
           </ion-col>
-          <ion-col>
+          <ion-col >
             <img src="/img3" alt="img3home" />
           </ion-col>
         </ion-row>
       </ion-grid>
     </div>
   </div>
-  <br />
-  <div>
-    <div class="texto_imagdiv class=texto_imagens">
-      <h3>Texto aleatorio de para o site4</h3>
+  <br /><br>
+    <div class="img4Text4"  >
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <div class="titulo_imagens"><h2>Titulo aleatorio site4</h2></div>
+            <div class="texto_imagens">
+              <h3>Texto aleatorio de para o site4</h3>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+            <img src="/img4" alt="img4home" />
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </div>
-    <img src="/img4" alt="img4home" />
-  </div>
-
+<br><br>
   <div class="img5Text5Accordion">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
     <div class="titulo_imagens"><h2>Titulo aleatorio site5</h2></div>
     <div class="texto_imagens"><h3>Texto aleatorio de para o site5</h3></div>
     <ion-accordion-group>
@@ -149,8 +183,14 @@
         <div class="ion-padding" slot="content">Third Content</div>
       </ion-accordion>
     </ion-accordion-group>
-
+    </ion-col>
+  <ion-col>
+    <div style=" margin-top: 25%; margin-left: 20%;">
     <img src="/img5" alt="img5home" />
+  </div>
+  </ion-col>
+  </ion-row>
+</ion-grid>
   </div>
 
   <div class="cardsPaiscomTitulo">

@@ -1,42 +1,168 @@
+<style>
+  .cardPais {
+    width: 85%;
+  }
+
+  .entrar {
+    padding-left: 10%;
+  }
+  .cadastrar {
+    padding-right: 10%;
+  }
+</style>
+
 <ion-toolbar>
   <ion-grid>
     <ion-list>
       <ion-item>
-
         <ion-col>
-    <ion-tab-button tab="tab1">
-            <h1>Nino</h1>
+          <ion-tab-button tab="tab1">
+            <h2>Nino</h2>
           </ion-tab-button>
         </ion-col>
+
         <ion-col>
           <ion-accordion-group>
             <ion-accordion value="first">
-              <ion-item slot="header" >
-                <ion-label>First Accordion</ion-label>
+              <ion-item slot="header">
+                <ion-label>Produto</ion-label>
               </ion-item>
-               <div class="ion-padding" slot="content">First Content</div>
+              <ion-tab-button tab="tab3" slot="content">
+                <h4>Por que</h4>
+              </ion-tab-button>
+              <ion-tab-button tab="tab2" slot="content">
+                <h4>Recursos</h4>
+              </ion-tab-button>
+              <ion-tab-button tab="tab4" slot="content">
+                <h4>Começando</h4>
+              </ion-tab-button>
             </ion-accordion>
           </ion-accordion-group>
         </ion-col>
+
         <ion-col>
-          <ion-tab-button tab="tab2">
-            <h1>Preços</h1>
+          <ion-tab-button tab="#">
+            <h5>Preços</h5>
           </ion-tab-button>
         </ion-col>
-      
 
-        <ion-col>
-          <h1>Entrar</h1>
+        <ion-col class="entrar">
+          <ion-tab-button tab="#">
+            <h5>Entrar</h5>
+          </ion-tab-button>
         </ion-col>
-        <ion-col>
-          <h1>Cadastrar</h1>
+        <ion-col class="cadastrar">
+          <ion-tab-button tab="#">
+            <h5>Cadastrar</h5>
+          </ion-tab-button>
         </ion-col>
-
       </ion-item>
     </ion-list>
   </ion-grid>
 </ion-toolbar>
 
 <ion-content [fullscreen]="true">
-<h1>ola mundo</h1>
+  <div class="grupoImgText">
+    <div class="img1Text1">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <img src="/img1" alt="img1home" />
+          </ion-col>
+          <ion-col>
+            <div class="titulo_imagens"><h2>Titulo aleatorio site1</h2></div>
+            <div class="texto_imagens">
+              <h3>Texto aleatorio de para o site1</h3>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <br /><br />
+    <div class="img2Text2">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <div class="titulo_imagens"><h2>Titulo aleatorio site2</h2></div>
+            <div class="texto_imagens">
+              <h3>Texto aleatorio de para o site2</h3>
+            </div>
+          </ion-col>
+          <ion-col>
+            <img src="/img2" alt="img2home" />
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <br /><br />
+    <div class="img3Text3">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <img src="/img3" alt="img3home" />
+          </ion-col>
+          <ion-col>
+            <div class="titulo_imagens"><h2>Titulo aleatorio site3</h2></div>
+            <div class="texto_imagens">
+              <h3>Texto aleatorio de para o site3</h3>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <br /><br />
+    <div class="img4Text4">
+      <ion-grid>
+        <ion-row>
+
+          <ion-col>
+            <div class="titulo_imagens"><h2>Titulo aleatorio site4</h2></div>
+            <div class="texto_imagens">
+              <h3>Texto aleatorio de para o site4</h3>
+            </div>
+          </ion-col>
+            <ion-col>
+            <img src="/img4" alt="img4home" />
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+
+
+<ion-item>
+  <ion-label>
+<h1>
+  titulotitulotitulotitulotitulotitulotitulotitulotitulotitulo
+  titulotitulotitulotitulotitulotitulotitulotitulotitulotitulo
+</h1>
+<h5>h5aragrafoparagrafoparagrafoparagrafoparagrafoparagrafoparagrafo</h5>
+</ion-label>
+</ion-item>
+
+    <div class="imgList">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <img src="/imgList" alt="imgList" />
+          </ion-col>
+          <ion-col>
+            <div >
+<ion-item>
+  <li>aaaaaaaaa</li><br>
+  <li>bbbbb</li><br>
+  <li>bbbb</li><br>
+  <li>cccccc</li><br>
+  <li>dddd</li><br>
+  <li>dddd</li><br>
+  <li>dddd</li><br>
+  <li>ddd</li><br>
+</ion-item>
+            </div>
+
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+
 </ion-content>
