@@ -1,0 +1,59 @@
+
+<ion-toolbar>
+  <ion-grid>
+    <ion-list>
+      <ion-item>
+        <ion-col>
+          <ion-tab-button tab="tab1">
+            <h2>Nino</h2>
+          </ion-tab-button>
+        </ion-col>
+
+        <ion-col>
+          <ion-accordion-group>
+            <ion-accordion value="first">
+              <ion-item slot="header">
+                <ion-label>Produto</ion-label>
+              </ion-item>
+              <ion-tab-button tab="tab3" slot="content">
+                <h4>Por que</h4>
+              </ion-tab-button>
+              <ion-tab-button tab="tab2" slot="content">
+                <h4>Recursos</h4>
+              </ion-tab-button>
+              <ion-tab-button tab="tab4" slot="content">
+                <h4>Começando</h4>
+              </ion-tab-button>
+            </ion-accordion>
+          </ion-accordion-group>
+        </ion-col>
+
+        <ion-col>
+          <ion-tab-button tab="#">
+            <h5>Preços</h5>
+          </ion-tab-button>
+        </ion-col>
+
+        <ion-col class="entrar">
+          <ion-tab-button tab="#">
+            <h5>Entrar</h5>
+          </ion-tab-button>
+        </ion-col>
+        <ion-col class="cadastrar">
+          <ion-tab-button tab="#">
+            <h5>Cadastrar</h5>
+          </ion-tab-button>
+        </ion-col>
+      </ion-item>
+    </ion-list>
+  </ion-grid>
+</ion-toolbar>
+
+<ion-content [fullscreen]="true">
+
+<ion-card>
+
+
+</ion-card>
+
+</ion-content>

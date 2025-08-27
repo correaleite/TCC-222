@@ -3,17 +3,6 @@
     width: 85%;
   }
 
-  .entrar{
-    padding-left: 10%;
-  }
-  .cadastrar{
-  padding-right: 10%;
-  }
-  .ion-padding{
-    display: flex;
-
-
-  }
 
 </style>
 
@@ -50,21 +39,28 @@
 
 
         <ion-col>
-          <ion-tab-button tab="#">
+          <ion-tab-button tab="precos">
             <h5>Preços</h5>
           </ion-tab-button>
         </ion-col>
 
+
+        <ion-col>
+<ion-row>
         <ion-col class="entrar">
-          <ion-tab-button tab="#">
-            <h5>Entrar</h5>
+          <ion-tab-button tab="login">
+          <ion-button size="medium">Entrar</ion-button>
           </ion-tab-button>
         </ion-col>
-        <ion-col class="cadastrar">
-          <ion-tab-button tab="#">
-            <h5>Cadastrar</h5>
+      <ion-col class="cadastrar">
+          <ion-tab-button tab="cadastrar">
+          <ion-button size="medium">cadastrar</ion-button>
           </ion-tab-button>
         </ion-col>
+
+</ion-row>
+</ion-col>
+
       </ion-item>
     </ion-list>
   </ion-grid>
@@ -182,6 +178,14 @@
         </ion-item>
         <div class="ion-padding" slot="content">Third Content</div>
       </ion-accordion>
+
+
+      <ion-accordion value="fourth">
+        <ion-item slot="header" color="light">
+          <ion-label>Fourth Accordion</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">Fourth Content</div>
+      </ion-accordion>
     </ion-accordion-group>
     </ion-col>
   <ion-col>
@@ -193,6 +197,8 @@
 </ion-grid>
   </div>
 
+
+    <!--Cards dos Pais-->
   <div class="cardsPaiscomTitulo">
     <div class="titulo_cardsPais"><h2>Titulo aleatorio Pais</h2></div>
     <ion-grid>
@@ -255,16 +261,23 @@
               </ion-card-content>
             </ion-card>
           </div>
-  /     </ion-col>
+       </ion-col>
       </ion-row>
     </ion-grid>
   </div>
 
+
   <div class="criarConta">
-    <div class="titulo_imagens"><h2>Criar sua Conta</h2></div>
-
+    <ion-grid>
+<ion-row>
+<ion-col>
     <img src="/imgConta" alt="imgConta" />
+</ion-col>
+  <ion-col>
+  <div class="titulo_imagens"><h2>Criar sua Conta</h2></div>
+<ion-button shape="round">Cadastrar-se</ion-button>
+</ion-col>
+  </ion-row>
+  </ion-grid>
   </div>
-
-  <ion-button shape="round">Cadastrar-se</ion-button>
 </ion-content>
