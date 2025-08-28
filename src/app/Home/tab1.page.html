@@ -2,6 +2,13 @@
   .cardPais {
     width: 85%;
   }
+  .entrar{
+    margin-right: -17%;
+  }
+
+  .EntrarCadastrarGrupo{
+    margin-right: 2%;
+  }
 
 
 </style>
@@ -19,7 +26,7 @@
 
 
         <ion-col>
-  <ion-accordion-group>
+<!--  <ion-accordion-group>
             <ion-accordion value="first">
               <ion-item slot="header">
                 <ion-label>Produto</ion-label>
@@ -35,7 +42,39 @@
           </ion-tab-button>
             </ion-accordion>
           </ion-accordion-group>
+          -->
+<ion-tab-button id="popover-button">
+            <h2>Produto</h2>
+          </ion-tab-button>
+
+          <ion-popover trigger="popover-button" [dismissOnSelect]="true">
+  <ng-template>
+    <ion-content>
+      <ion-list>
+        <ion-item [button]="true" [detail]="false" >Recursos</ion-item>
+        <ion-item [button]="true" [detail]="false">Option 2</ion-item>
+        <ion-item [button]="true" id="nested-trigger">More options...</ion-item>
+
+        <ion-popover trigger="nested-trigger" [dismissOnSelect]="true" side="end">
+          <ng-template>
+            <ion-content>
+              <ion-list>
+                <ion-item [button]="true" [detail]="false">Nested option</ion-item>
+              </ion-list>
+            </ion-content>
+          </ng-template>
+        </ion-popover>
+      </ion-list>
+    </ion-content>
+  </ng-template>
+</ion-popover>
+
+
+
+
         </ion-col>
+
+
 
 
         <ion-col>
@@ -45,7 +84,7 @@
         </ion-col>
 
 
-        <ion-col>
+        <ion-col class="EntrarCadastrarGrupo">
 <ion-row>
         <ion-col class="entrar">
           <ion-tab-button tab="login">
