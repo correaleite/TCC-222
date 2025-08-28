@@ -46,26 +46,11 @@
 <ion-tab-button id="popover-button">
             <h2>Produto</h2>
           </ion-tab-button>
-
           <ion-popover trigger="popover-button" [dismissOnSelect]="true">
   <ng-template>
-    <ion-content>
-      <ion-list>
-        <ion-item [button]="true" [detail]="false" >Recursos</ion-item>
-        <ion-item [button]="true" [detail]="false">Option 2</ion-item>
-        <ion-item [button]="true" id="nested-trigger">More options...</ion-item>
 
-        <ion-popover trigger="nested-trigger" [dismissOnSelect]="true" side="end">
-          <ng-template>
-            <ion-content>
-              <ion-list>
-                <ion-item [button]="true" [detail]="false">Nested option</ion-item>
-              </ion-list>
-            </ion-content>
-          </ng-template>
-        </ion-popover>
-      </ion-list>
-    </ion-content>
+  <ion-tab-button>Recursos</ion-tab-button>
+
   </ng-template>
 </ion-popover>
 

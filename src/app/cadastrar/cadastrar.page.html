@@ -1,4 +1,3 @@
-
 <ion-toolbar>
   <ion-grid>
     <ion-list>
@@ -50,10 +49,33 @@
 </ion-toolbar>
 
 <ion-content [fullscreen]="true">
+  <div style="padding-left: 30%; padding-right: 30%; margin-top: 10%;">
 
-<ion-card>
+    <ion-card style="padding: 10%">
+      <div>
+        <img src="#" alt="imgNino" />
+        <h2>Nino</h2>
+      </div>
+      <div>
+        <ion-label><h6>Email:</h6></ion-label>
+        <ion-item><ion-input placeholder="Email"> </ion-input></ion-item>
+      </div>
+            <div>
+        <ion-label><h6>Senha:</h6></ion-label>
+        <ion-item><ion-input placeholder="Senha"> </ion-input></ion-item>
+      </div>
+            <div>
+        <ion-label><h6>Confirmar Senha:</h6></ion-label>
+        <ion-item><ion-input placeholder="Confirmar Senha"> </ion-input></ion-item>
+      </div>
 
+<div>
+  <ion-button>Cadastrar-se</ion-button>
+</div>
 
-</ion-card>
+<p>Já possui uma conta? <a href="#">Faça login</a></p>
 
+    </ion-card>
+
+  </div>
 </ion-content>
