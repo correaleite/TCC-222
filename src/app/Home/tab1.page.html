@@ -3,7 +3,7 @@
     width: 85%;
   }
   .entrar{
-    margin-right: -17%;
+    margin-right: -20%;
   }
 
   .EntrarCadastrarGrupo{
@@ -11,6 +11,13 @@
   }
 
 
+
+.navbarProduto{
+display: flex;
+justify-content: start;
+margin-right: 20%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 </style>
 
 
@@ -18,33 +25,28 @@
   <ion-grid >
     <ion-list >
       <ion-item >
-        <ion-col>
+        <ion-col class="logo">
           <ion-tab-button tab="tab1">
-            <h2>Nino</h2>
+            <h1>Nino</h1>
           </ion-tab-button>
         </ion-col>
 
-
+<ion-row class="navbarProduto">
         <ion-col>
-  <ion-accordion-group >
-            <ion-accordion value="first" >
-              <ion-item slot="header">
-                <ion-label>Produto</ion-label>
-              </ion-item>
-              <ion-tab-button tab="tab3" slot="content" >
-            <h4>Por que</h4>
+              <ion-tab-button tab="tab3" >
+            <h5>Porque</h5>
           </ion-tab-button>
-               <ion-tab-button tab="tab2" slot="content">
-            <h4>Recursos</h4>
-          </ion-tab-button>
-            <ion-tab-button tab="tab4" slot="content">
-            <h4>Começando</h4>
-          </ion-tab-button>
-            </ion-accordion>
-          </ion-accordion-group>
         </ion-col>
-
-
+        <ion-col>
+               <ion-tab-button tab="tab2" >
+            <h5>Recursos</h5>
+          </ion-tab-button>
+        </ion-col>
+        <ion-col>
+            <ion-tab-button tab="tab4">
+            <h5>Começando</h5>
+          </ion-tab-button>
+        </ion-col>
 
 
         <ion-col>
@@ -52,6 +54,7 @@
             <h5>Preços</h5>
           </ion-tab-button>
         </ion-col>
+      </ion-row>
 
 
         <ion-col class="EntrarCadastrarGrupo">
@@ -79,16 +82,21 @@
 
 
 <ion-content [fullscreen]="true">
+<div style="margin-bottom: 45%;">
+<div style="justify-content: center; display: flex; margin-top: 125px; ">
+  <h1 style="font-size: 250%; ">O melhor para o futuro de sua Criança!!</h1>
+  </div><br />
 
-
-  <h1>O melhor para o futuro de sua Criança!!</h1>
-  <br />
-  <div>
-    <button>Experimente nosso app</button><br /><br />
-    <button>Veja nossos planos</button>
-  </div>
+  <div style="justify-content: center; display: flex;">
+  <button style="background-color: #4CBE78;">Experimente nosso app</button>
+  </div><br>
+  <div style="justify-content: center; display: flex; ">
+      <button style="border: 2px solid #4CBE78; color: #4CBE78; background-color: transparent ;">Veja nossos planos</button>
+      </div>
   <br /><br />
-  <div class="Header_body"><h1>aaaaaaaaaaaaaaaa</h1></div>
+   </div>
+
+   <div class="Header_body"><h1>aaaaaaaaaaaaaaaa</h1></div>
   <br />
 
   <!--Texto imagens-->
