@@ -2,76 +2,83 @@
   .cardPais {
     width: 85%;
   }
-  .entrar{
-    margin-right: -20%;
+
+  .navbar{
+    display: flex;
+    align-items: row;
   }
 
-  .EntrarCadastrarGrupo{
-    margin-right: 2%;
+  .Header_body{
+    display: flex;
+    justify-content: center;
+  }
+
+  .img1Text1{
+    display: flex;
+    justify-content: center
   }
 
 
 
-.navbarProduto{
-display: flex;
-justify-content: start;
-margin-right: 20%;
-}
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 </style>
 
 
-<ion-toolbar >
-  <ion-grid >
+<ion-toolbar class="navbar" >
+  <ion-grid  >
     <ion-list >
       <ion-item >
-        <ion-col class="logo">
+
+
+     <ion-col style="right:9%">
           <ion-tab-button tab="tab1">
             <h1>Nino</h1>
           </ion-tab-button>
         </ion-col>
 
-<ion-row class="navbarProduto">
-        <ion-col>
+
+<ion-grid style="display: flex; align-items: row;">
+        <ion-col style="right:36%">
               <ion-tab-button tab="tab3" >
-            <h5>Porque</h5>
+            <h6>Porque</h6>
           </ion-tab-button>
         </ion-col>
-        <ion-col>
+        <ion-col style="right:36%">
                <ion-tab-button tab="tab2" >
-            <h5>Recursos</h5>
+            <h6>Recursos</h6>
           </ion-tab-button>
         </ion-col>
-        <ion-col>
+        <ion-col style="right:36%">
             <ion-tab-button tab="tab4">
-            <h5>Começando</h5>
+            <h6>Começando</h6>
           </ion-tab-button>
         </ion-col>
-
-
-        <ion-col>
+        <ion-col style="right:36%">
           <ion-tab-button tab="precos">
-            <h5>Preços</h5>
+            <h6>Preços</h6>
           </ion-tab-button>
         </ion-col>
-      </ion-row>
+        </ion-grid>
 
 
-        <ion-col class="EntrarCadastrarGrupo">
-<ion-row>
-        <ion-col class="entrar">
+        <ion-grid style="display: flex; align-items: row;">
+        <ion-col offset="3"  class="entrar">
           <ion-tab-button tab="login">
           <ion-button size="medium">Entrar</ion-button>
           </ion-tab-button>
         </ion-col>
-      <ion-col class="cadastrar">
+      <ion-col style="right:6%" class="cadastrar">
           <ion-tab-button tab="cadastrar">
           <ion-button size="medium">cadastrar</ion-button>
           </ion-tab-button>
         </ion-col>
+        </ion-grid>
 
-</ion-row>
-</ion-col>
+
+
+
+
+
 
       </ion-item>
     </ion-list>
@@ -82,7 +89,7 @@ margin-right: 20%;
 
 
 <ion-content [fullscreen]="true">
-<div style="margin-bottom: 45%;">
+<div style="margin-bottom: 35%;">
 <div style="justify-content: center; display: flex; margin-top: 125px; ">
   <h1 style="font-size: 250%; ">O melhor para o futuro de sua Criança!!</h1>
   </div><br />
@@ -96,7 +103,7 @@ margin-right: 20%;
   <br /><br />
    </div>
 
-   <div class="Header_body"><h1>aaaaaaaaaaaaaaaa</h1></div>
+   <div class="Header_body"><h1>Frase do Aplicativo</h1></div>
   <br />
 
   <!--Texto imagens-->
