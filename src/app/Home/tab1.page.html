@@ -1,7 +1,5 @@
 <style>
-  .cardPais {
-    width: 85%;
-  }
+
 
   .navbar{
     display: flex;
@@ -15,8 +13,68 @@
 
   .img1Text1{
     display: flex;
-    justify-content: center
+    justify-content: center;
   }
+
+        ion-accordion::part(header) {
+            padding: 8px; /* Adjust padding */
+        }
+
+        ion-accordion::part(content) {
+            padding-left: 16px; /* Adjust padding */
+        }
+
+        ion-accordion-group{
+          ion-accordion{
+             ion-accordion-toggle-icon {
+               color: green
+              }
+          }
+        }
+
+        ion-accordion-group{
+       padding-left: 105px;
+          ion-accordion{
+            width: 98%;
+            ion-label{
+              padding:8px;
+              font-size: 20px;
+
+            }
+          }
+        }
+
+        .titulo_imagens_accordion_topo{
+           padding-left: 113px;
+           font-weight: 100;
+           font-size: 30px;
+        }
+
+        .titulo_imagens_accordion{
+           padding-left: 113px;
+           font-weight: 900;
+           font-size: 30px;
+        }
+        .texto_imagens_accordion{
+           padding-left: 113px;
+           font-weight: 100;
+           font-size: 20px;
+        }
+
+        .custom-icon {
+  color: #4CBE78
+}
+
+
+   .titulo_cardsPais{
+    display: flex;
+    justify-content: center
+   }
+
+   ion-card{
+     display: flex;
+  flex-direction: column; /* Arranges content vertically within the card */
+   }
 
 
 
@@ -107,8 +165,8 @@
   <br />
 
   <!--Texto imagens-->
-  <div class="grupoImgText" >
-    <div class="img1Text1">
+  <div class="grupoImgText" style=" display: inline; text-align: center;">
+    <div class="img1Text1" style="margin-top: 15%;">
       <ion-grid>
         <ion-row>
           <ion-col>
@@ -124,7 +182,7 @@
       </ion-grid>
     </div>
     <br /><br />
-    <div class="img2Text2">
+    <div class="img2Text2" style="margin-top: 15%;">
       <ion-grid>
         <ion-row>
           <ion-col>
@@ -140,7 +198,7 @@
       </ion-grid>
     </div>
     <br /><br />
-    <div class="img3Text3">
+    <div class="img3Text3" style="margin-top: 15%;">
       <ion-grid>
         <ion-row>
           <ion-col>
@@ -155,9 +213,8 @@
         </ion-row>
       </ion-grid>
     </div>
-  </div>
-  <br /><br>
-    <div class="img4Text4"  >
+<br>
+    <div class="img4Text4"  style="margin-top: 25%;">
       <ion-grid>
         <ion-row>
           <ion-col>
@@ -174,39 +231,65 @@
         </ion-row>
       </ion-grid>
     </div>
+  </div>
+
 <br><br>
+
+
+
   <div class="img5Text5Accordion">
     <ion-grid>
       <ion-row>
         <ion-col>
-    <div class="titulo_imagens"><h2>Titulo aleatorio site5</h2></div>
-    <div class="texto_imagens"><h3>Texto aleatorio de para o site5</h3></div>
+<div class="titulo_imagens_accordion_topo"><p>Titulo pequeno aleatorio site5</p></div>
+    <div class="titulo_imagens_accordion"><p>Titulo aleatorio site5</p></div>
+    <div class="texto_imagens_accordion"><p>Texto aleatorio de para o site5</p></div>
     <ion-accordion-group>
-      <ion-accordion value="first">
-        <ion-item slot="header" color="light">
+      <ion-accordion value="first" class="accordionHome" >
+        <ion-item slot="header" color="light" style=" box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
           <ion-label>First Accordion</ion-label>
+          <ion-icon
+                  class="ion-accordion-toggle-icon custom-icon"
+                  name="caret-down"
+                  slot="end" >
+                </ion-icon>
         </ion-item>
         <div class="ion-padding" slot="content">First Content</div>
       </ion-accordion>
 
-      <ion-accordion value="second">
-        <ion-item slot="header" color="light">
+      <ion-accordion value="second" class="accordionHome">
+        <ion-item slot="header" color="light" style=" box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
           <ion-label>Second Accordion</ion-label>
+            <ion-icon
+                  class="ion-accordion-toggle-icon custom-icon"
+                  name="caret-down"
+                  slot="end" >
+                </ion-icon>
         </ion-item>
         <div class="ion-padding" slot="content">Second Content</div>
       </ion-accordion>
 
-      <ion-accordion value="third">
-        <ion-item slot="header" color="light">
+      <ion-accordion value="third" class="accordionHome">
+        <ion-item slot="header" color="light" style=" box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
           <ion-label>Third Accordion</ion-label>
+            <ion-icon
+                  class="ion-accordion-toggle-icon custom-icon"
+                  name="caret-down"
+                  slot="end" >
+                </ion-icon>
         </ion-item>
         <div class="ion-padding" slot="content">Third Content</div>
       </ion-accordion>
 
 
-      <ion-accordion value="fourth">
-        <ion-item slot="header" color="light">
+      <ion-accordion value="fourth" class="accordionHome">
+        <ion-item slot="header" color="light" style=" box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
           <ion-label>Fourth Accordion</ion-label>
+            <ion-icon
+                  class="ion-accordion-toggle-icon custom-icon"
+                  name="caret-down"
+                  slot="end" >
+                </ion-icon>
         </ion-item>
         <div class="ion-padding" slot="content">Fourth Content</div>
       </ion-accordion>
@@ -223,13 +306,13 @@
 
 
     <!--Cards dos Pais-->
-  <div class="cardsPaiscomTitulo">
+  <div class="cardsPaiscomTitulo" >
     <div class="titulo_cardsPais"><h2>Titulo aleatorio Pais</h2></div>
     <ion-grid>
       <ion-row>
         <ion-col>
           <div class="cardPais">
-            <ion-card>
+            <ion-card style="width: 60%;display: relative; margin: 0px auto;">
               <img
                 alt="Silhouette of mountains"
                 src="https://ionicframework.com/docs/img/demos/card-media.png"
@@ -249,7 +332,7 @@
 
         <ion-col>
           <div class="cardPais">
-            <ion-card>
+            <ion-card style="width: 60%;display: relative; margin: 0px auto;">
               <img
                 alt="Silhouette of mountains"
                 src="https://ionicframework.com/docs/img/demos/card-media.png"
@@ -269,7 +352,7 @@
 
         <ion-col>
           <div class="cardPais">
-            <ion-card>
+            <ion-card style="width: 60%;display: relative; margin: 0px auto;">
               <img
                 alt="Silhouette of mountains"
                 src="https://ionicframework.com/docs/img/demos/card-media.png"
