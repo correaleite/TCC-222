@@ -1,52 +1,64 @@
-<ion-toolbar>
-  <ion-grid>
-    <ion-list>
-      <ion-item>
-        <ion-col>
+<ion-toolbar class="navbar" >
+  <ion-grid  >
+    <ion-list >
+      <ion-item >
+
+
+     <ion-col style="right:9%">
           <ion-tab-button tab="tab1">
-            <h2>Nino</h2>
+            <h1>Nino</h1>
           </ion-tab-button>
         </ion-col>
 
-        <ion-col>
-          <ion-accordion-group>
-            <ion-accordion value="first">
-              <ion-item slot="header">
-                <ion-label>Produto</ion-label>
-              </ion-item>
-              <ion-tab-button tab="tab3" slot="content">
-                <h4>Por que</h4>
-              </ion-tab-button>
-              <ion-tab-button tab="tab2" slot="content">
-                <h4>Recursos</h4>
-              </ion-tab-button>
-              <ion-tab-button tab="tab4" slot="content">
-                <h4>Começando</h4>
-              </ion-tab-button>
-            </ion-accordion>
-          </ion-accordion-group>
-        </ion-col>
 
-        <ion-col>
-          <ion-tab-button tab="#">
-            <h5>Preços</h5>
+<ion-grid style="display: flex; align-items: row;">
+        <ion-col style="right:36%">
+              <ion-tab-button tab="tab3" >
+            <h6>Porque</h6>
           </ion-tab-button>
         </ion-col>
+        <ion-col style="right:36%">
+               <ion-tab-button tab="tab2" >
+            <h6>Recursos</h6>
+          </ion-tab-button>
+        </ion-col>
+        <ion-col style="right:36%">
+            <ion-tab-button tab="tab4">
+            <h6>Começando</h6>
+          </ion-tab-button>
+        </ion-col>
+        <ion-col style="right:36%">
+          <ion-tab-button tab="precos">
+            <h6>Preços</h6>
+          </ion-tab-button>
+        </ion-col>
+        </ion-grid>
 
-        <ion-col class="entrar">
-          <ion-tab-button tab="#">
-            <h5>Entrar</h5>
+
+        <ion-grid style="display: flex; align-items: row;">
+        <ion-col offset="3"  class="entrar">
+          <ion-tab-button tab="login">
+          <ion-button size="medium">Entrar</ion-button>
           </ion-tab-button>
         </ion-col>
-        <ion-col class="cadastrar">
-          <ion-tab-button tab="#">
-            <h5>Cadastrar</h5>
+      <ion-col style="right:6%" class="cadastrar">
+          <ion-tab-button tab="cadastrar">
+          <ion-button size="medium">cadastrar</ion-button>
           </ion-tab-button>
         </ion-col>
+        </ion-grid>
+
+
+
+
+
+
+
       </ion-item>
     </ion-list>
   </ion-grid>
 </ion-toolbar>
+
 
 <ion-content [fullscreen]="true">
   <div style="padding-left: 30%; padding-right: 30%; margin-top: 10%;">
