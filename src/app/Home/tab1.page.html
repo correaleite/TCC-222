@@ -1,318 +1,373 @@
 <style>
 
 
-  .navbar{
+ .navbar {
     display: flex;
     align-items: row;
   }
 
-  .Header_body{
+  .Header_body {
     display: flex;
     justify-content: center;
   }
 
-  .img1Text1{
+  .img1Text1 {
     display: flex;
     justify-content: center;
   }
 
-        ion-accordion::part(header) {
-            padding: 8px; /* Adjust padding */
-        }
+  ion-accordion::part(header) {
+    padding: 8px; /* Adjust padding */
+  }
 
-        ion-accordion::part(content) {
-            padding-left: 16px; /* Adjust padding */
-        }
+  ion-accordion::part(content) {
+    padding-left: 16px; /* Adjust padding */
+  }
 
-        ion-accordion-group{
-          ion-accordion{
-             ion-accordion-toggle-icon {
-               color: green
-              }
-          }
-        }
+  ion-accordion-group {
+    ion-accordion {
+      ion-accordion-toggle-icon {
+        color: green;
+      }
+    }
+  }
 
-        ion-accordion-group{
-       padding-left: 105px;
-          ion-accordion{
-            width: 98%;
-            ion-label{
-              padding:8px;
-              font-size: 20px;
+  ion-accordion-group {
+    padding-left: 105px;
+    ion-accordion {
+      width: 98%;
+      ion-label {
+        padding: 8px;
+        font-size: 20px;
+      }
+    }
+  }
 
-            }
-          }
-        }
+  .titulo_imagens_accordion_topo {
+    padding-left: 113px;
+    font-weight: 100;
+    font-size: 30px;
+  }
 
-        .titulo_imagens_accordion_topo{
-           padding-left: 113px;
-           font-weight: 100;
-           font-size: 30px;
-        }
+  .titulo_imagens_accordion {
+    padding-left: 113px;
+    font-weight: 900;
+    font-size: 30px;
+  }
+  .texto_imagens_accordion {
+    padding-left: 113px;
+    font-weight: 100;
+    font-size: 20px;
+  }
 
-        .titulo_imagens_accordion{
-           padding-left: 113px;
-           font-weight: 900;
-           font-size: 30px;
-        }
-        .texto_imagens_accordion{
-           padding-left: 113px;
-           font-weight: 100;
-           font-size: 20px;
-        }
+  .custom-icon {
+    color: #4cbe78;
+  }
 
-        .custom-icon {
-  color: #4CBE78
-}
-
-
-   .titulo_cardsPais{
+  .titulo_cardsPais {
     display: flex;
-    justify-content: center
-   }
+    justify-content: center;
+  }
 
-   ion-card{
-     display: flex;
-  flex-direction: column; /* Arranges content vertically within the card */
-   }
-
-
+  ion-card {
+    display: flex;
+    flex-direction: column; /* Arranges content vertically within the card */
+  }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 </style>
 
 
-<ion-toolbar class="navbar" >
-  <ion-grid  >
-    <ion-list >
-      <ion-item >
-
-
-     <ion-col style="right:9%">
+<ion-toolbar class="navbar">
+  <ion-grid>
+    <ion-list>
+      <ion-item>
+        <ion-col style="right: 9%">
           <ion-tab-button tab="tab1">
             <h1>Nino</h1>
           </ion-tab-button>
         </ion-col>
 
-
-<ion-grid style="display: flex; align-items: row;">
-        <ion-col style="right:36%">
-              <ion-tab-button tab="tab3" >
-            <h6>Porque</h6>
-          </ion-tab-button>
-        </ion-col>
-        <ion-col style="right:36%">
-               <ion-tab-button tab="tab2" >
-            <h6>Recursos</h6>
-          </ion-tab-button>
-        </ion-col>
-        <ion-col style="right:36%">
+        <ion-grid style="display: flex; align-items: row">
+          <ion-col style="right: 36%">
+            <ion-tab-button tab="tab3">
+              <h6>Porque</h6>
+            </ion-tab-button>
+          </ion-col>
+          <ion-col style="right: 36%">
+            <ion-tab-button tab="tab2">
+              <h6>Recursos</h6>
+            </ion-tab-button>
+          </ion-col>
+          <ion-col style="right: 36%">
             <ion-tab-button tab="tab4">
-            <h6>Começando</h6>
-          </ion-tab-button>
-        </ion-col>
-        <ion-col style="right:36%">
-          <ion-tab-button tab="precos">
-            <h6>Preços</h6>
-          </ion-tab-button>
-        </ion-col>
+              <h6>Começando</h6>
+            </ion-tab-button>
+          </ion-col>
+          <ion-col style="right: 36%">
+            <ion-tab-button tab="precos">
+              <h6>Preços</h6>
+            </ion-tab-button>
+          </ion-col>
         </ion-grid>
 
-
-        <ion-grid style="display: flex; align-items: row;">
-        <ion-col offset="3"  class="entrar">
-          <ion-tab-button tab="login">
-          <ion-button size="medium">Entrar</ion-button>
-          </ion-tab-button>
-        </ion-col>
-      <ion-col style="right:6%" class="cadastrar">
-          <ion-tab-button tab="cadastrar">
-          <ion-button size="medium">cadastrar</ion-button>
-          </ion-tab-button>
-        </ion-col>
+        <ion-grid style="display: flex; align-items: row">
+          <ion-col offset="3" class="entrar">
+            <ion-tab-button tab="login">
+              <ion-button size="medium">Entrar</ion-button>
+            </ion-tab-button>
+          </ion-col>
+          <ion-col style="right: 6%" class="cadastrar">
+            <ion-tab-button tab="cadastrar">
+              <ion-button size="medium">cadastrar</ion-button>
+            </ion-tab-button>
+          </ion-col>
         </ion-grid>
-
-
-
       </ion-item>
     </ion-list>
   </ion-grid>
 </ion-toolbar>
 
-
-
-
 <ion-content [fullscreen]="true">
+  <div style="margin-bottom: 35%">
+    <div style="justify-content: center; display: flex; margin-top: 125px">
+      <h1 style="font-size: 250%">O melhor para o futuro de sua Criança!!</h1>
+    </div>
+    <br />
 
+    <div style="justify-content: center; display: flex">
+      <button style="background-color: #4cbe78">Experimente nosso app</button>
+    </div>
+    <br />
+    <div style="justify-content: center; display: flex">
+      <button
+        style="
+          border: 2px solid #4cbe78;
+          color: #4cbe78;
+          background-color: transparent;
+        "
+      >
+        Veja nossos planos
+      </button>
+    </div>
+    <br /><br />
+  </div>
 
-  <img src="/TCC-222/src/app/Imgs/ImgsHome/Img1Home.svg" alt="img1home" />
-
-<div style="margin-bottom: 35%;">
-<div style="justify-content: center; display: flex; margin-top: 125px; ">
-  <h1 style="font-size: 250%; ">O Melhor Para O Futuro De Sua Criança!!</h1>
-  </div><br />
-
-  <div style="justify-content: center; display: flex;">
-  <button style="background-color: #4CBE78;">Experimente nosso app</button>
-  </div><br>
-  <div style="justify-content: center; display: flex; ">
-      <button style="border: 2px solid #4CBE78; color: #4CBE78; background-color: transparent ;">Veja nossos planos</button>
-      </div>
-  <br /><br />
-   </div>
-
-   <div class="Header_body"><h1>Frase do Aplicativo</h1></div>
+  <div class="Header_body"><h1>“Nada melhor do que uma família unida”</h1></div>
   <br />
 
   <!--Texto imagens-->
-  <div class="grupoImgText" style=" display: inline; text-align: center;">
-    <div class="img1Text1" style="margin-top: 15%;">
+  <div class="grupoImgText" style="display: inline; text-align: center">
+    <div class="img1Text1" style="margin-top: 5%; padding: 5%">
       <ion-grid>
-        <ion-row>
+        <ion-row style="display: flex; align-items: center;">
           <ion-col>
-            <div class="titulo_imagens"><h2>Titulo aleatorio site1</h2></div>
+            <div class="titulo_imagens">
+              <h2><strong>O Que Somos</strong></h2>
+            </div>
             <div class="texto_imagens">
-              <h3>Texto aleatorio de para o site1</h3>
+              <h5
+                style="
+font-weight: normal;
+                  padding-left: 10%;
+                  padding-right: 10%;
+                "
+              >
+                Buscamos mostrar para os clientes um controle parental para
+                monitorar, proteger, e também promover o valor da família
+                tradicional, atividades em família, e ambos terem menos tempo no
+                eletrônicos. A partir dele conseguirá usar de acordo com suas
+                necessidades.
+              </h5>
             </div>
           </ion-col>
-          <ion-col>
-            <ion-img src="/TCC-222/src/app/Imgs/ImgsHome/Img1Home.svg" alt="img1home" ></ion-img>
+
+          <ion-col
+            style="display: inline; height: 200%"
+          >
+            <ion-img
+              src="/assets/img/Home/Group 239243 (1).svg"
+              alt="Gabriel Costa"
+              style="height: 70%; width: 80%"
+            ></ion-img>
           </ion-col>
         </ion-row>
       </ion-grid>
     </div>
-    <br /><br />
-    <div class="img2Text2" style="margin-top: 15%;">
+
+    <div class="img2Text2"  style="margin-top:-8%; padding: 5%">
       <ion-grid>
-        <ion-row>
-          <ion-col>
-            <img src="/img2" alt="img2home" />
+        <ion-row style="display: flex; align-items: center;">
+          <ion-col
+            style="display: inline; height: 200%" >
+            <ion-img
+              src="/assets/img/Home/Group 239224.svg"
+              alt="Gabriel Costa"
+              style="height: 90%; width: 90%"
+            ></ion-img>
           </ion-col>
+
+
+
           <ion-col>
-            <div class="titulo_imagens"><h2>Titulo aleatorio site2</h2></div>
+             <div class="titulo_imagens">
+              <h2><strong>O que somos</strong></h2>
+            </div>
             <div class="texto_imagens">
-              <h3>Texto aleatorio de para o site2</h3>
+              <h5 style="font-weight: lighter">
+                Usando metódos do minimalismo digital, que já se provou
+                extremamente eficiente, criamos em conjunto, uma cultura mais
+                saúdavel para as crianças e os pais, com menos luz das telas e
+                mais luz solar na vida.
+              </h5>
             </div>
           </ion-col>
         </ion-row>
       </ion-grid>
     </div>
-    <br /><br />
-    <div class="img3Text3" style="margin-top: 15%;">
+    <br />
+
+    <div><img src="#" alt="Video" /></div>
+    <br />
+    <br />
+    <div class="img4Text4"  style="margin-top:15%; padding: 5% ; display: inline; text-align: center">
       <ion-grid>
         <ion-row>
           <ion-col>
-            <div class="titulo_imagens"><h2>Titulo aleatorio site3</h2></div>
+            <div class="titulo_imagens">
+              <h2><strong>Ambiente para toda a familia!</strong></h2>
+            </div>
             <div class="texto_imagens">
-              <h3>Texto aleatorio de para o site3</h3>
+              <h5 style="font-weight: lighter">
+                Queremos fazer que as futuras gerações tenham a possibilidade de
+                crescer sem a influência de um uso exagerado da internet,
+                permitindo que os pais regulamentem e monitorem o uso de
+                internet. Isso é muito importante para ajudar e conscientizar
+                sobre o possível mal uso da internet e ajudar o relacionamento
+                entre a criança e seus pais.
+              </h5>
             </div>
-          </ion-col>
-          <ion-col >
-            <img src="/img3" alt="img3home" />
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    </div>
-<br>
-    <div class="img4Text4"  style="margin-top: 25%;">
-      <ion-grid>
-        <ion-row>
-          <ion-col>
-            <div class="titulo_imagens"><h2>Titulo aleatorio site4</h2></div>
-            <div class="texto_imagens">
-              <h3>Texto aleatorio de para o site4</h3>
-            </div>
-          </ion-col>
-          <ion-col>
-            <div>
-            <img src="/img4" alt="img4home" />
-            </div>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    </div>
-  </div>
+            <ion-row>
+<ion-col>
 
-<br><br>
-
-
-
-  <div class="img5Text5Accordion">
+  <div class="img5Text5Accordion" >
     <ion-grid>
       <ion-row>
         <ion-col>
-<div class="titulo_imagens_accordion_topo"><p>Titulo pequeno aleatorio site5</p></div>
-    <div class="titulo_imagens_accordion"><p>Titulo aleatorio site5</p></div>
-    <div class="texto_imagens_accordion"><p>Texto aleatorio de para o site5</p></div>
-    <ion-accordion-group>
-      <ion-accordion value="first" class="accordionHome" >
-        <ion-item slot="header" color="light" style=" box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
-          <ion-label>First Accordion</ion-label>
-          <ion-icon
+          <div class="titulo_imagens_accordion_topo">
+            <h4><strong>Você támbem está nessa!!</strong></h4>
+          </div>
+
+          <div class="texto_imagens_accordion">
+            <p>
+              Assim como pai você deve ser exemplo do que fazer, e aqui temos
+              alguns exemplos de você para sua família
+            </p>
+          </div>
+          <ion-accordion-group>
+            <ion-accordion value="first" class="accordionHome">
+              <ion-item
+                slot="header"
+                color="light"
+                style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px"
+              >
+                <ion-label>First Accordion</ion-label>
+                <ion-icon
                   class="ion-accordion-toggle-icon custom-icon"
                   name="caret-down"
-                  slot="end" >
+                  slot="end"
+                >
                 </ion-icon>
-        </ion-item>
-        <div class="ion-padding" slot="content">First Content</div>
-      </ion-accordion>
+              </ion-item>
+              <div class="ion-padding" slot="content">First Content</div>
+            </ion-accordion>
 
-      <ion-accordion value="second" class="accordionHome">
-        <ion-item slot="header" color="light" style=" box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
-          <ion-label>Second Accordion</ion-label>
-            <ion-icon
+            <ion-accordion value="second" class="accordionHome">
+              <ion-item
+                slot="header"
+                color="light"
+                style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px"
+              >
+                <ion-label>Second Accordion</ion-label>
+                <ion-icon
                   class="ion-accordion-toggle-icon custom-icon"
                   name="caret-down"
-                  slot="end" >
+                  slot="end"
+                >
                 </ion-icon>
-        </ion-item>
-        <div class="ion-padding" slot="content">Second Content</div>
-      </ion-accordion>
+              </ion-item>
+              <div class="ion-padding" slot="content">Second Content</div>
+            </ion-accordion>
 
-      <ion-accordion value="third" class="accordionHome">
-        <ion-item slot="header" color="light" style=" box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
-          <ion-label>Third Accordion</ion-label>
-            <ion-icon
+            <ion-accordion value="third" class="accordionHome">
+              <ion-item
+                slot="header"
+                color="light"
+                style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px"
+              >
+                <ion-label>Third Accordion</ion-label>
+                <ion-icon
                   class="ion-accordion-toggle-icon custom-icon"
                   name="caret-down"
-                  slot="end" >
+                  slot="end"
+                >
                 </ion-icon>
-        </ion-item>
-        <div class="ion-padding" slot="content">Third Content</div>
-      </ion-accordion>
+              </ion-item>
+              <div class="ion-padding" slot="content">Third Content</div>
+            </ion-accordion>
 
-
-      <ion-accordion value="fourth" class="accordionHome">
-        <ion-item slot="header" color="light" style=" box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
-          <ion-label>Fourth Accordion</ion-label>
-            <ion-icon
+            <ion-accordion value="fourth" class="accordionHome">
+              <ion-item
+                slot="header"
+                color="light"
+                style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px"
+              >
+                <ion-label>Fourth Accordion</ion-label>
+                <ion-icon
                   class="ion-accordion-toggle-icon custom-icon"
                   name="caret-down"
-                  slot="end" >
+                  slot="end"
+                >
                 </ion-icon>
-        </ion-item>
-        <div class="ion-padding" slot="content">Fourth Content</div>
-      </ion-accordion>
-    </ion-accordion-group>
-    </ion-col>
-  <ion-col>
-    <div style=" margin-top: 25%; margin-left: 20%;">
-    <img src="/img5" alt="img5home" />
+              </ion-item>
+              <div class="ion-padding" slot="content">Fourth Content</div>
+            </ion-accordion>
+          </ion-accordion-group>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
   </div>
-  </ion-col>
-  </ion-row>
-</ion-grid>
+</ion-col>
+</ion-row>
+          </ion-col>
+
+          <ion-col
+            style="display: inline; height: 200%"
+          >
+            <ion-img
+              src="/assets/img/Home/Group 239230.svg"
+              alt="Gabriel Costa"
+              style="height: 90%; width: 90%"
+            ></ion-img>
+          </ion-col>
+        </ion-row>
+
+      </ion-grid>
+    </div>
   </div>
 
+  <br /><br />
 
-    <!--Cards dos Pais-->
-  <div class="cardsPaiscomTitulo" >
+
+  <!--Cards dos Pais-->
+  <div class="cardsPaiscomTitulo">
     <div class="titulo_cardsPais"><h2>Titulo aleatorio Pais</h2></div>
     <ion-grid>
       <ion-row>
         <ion-col>
           <div class="cardPais">
-            <ion-card style="width: 60%;display: relative; margin: 0px auto;">
+            <ion-card style="width: 60%; display: relative; margin: 0px auto">
               <img
                 alt="Silhouette of mountains"
                 src="https://ionicframework.com/docs/img/demos/card-media.png"
@@ -332,7 +387,7 @@
 
         <ion-col>
           <div class="cardPais">
-            <ion-card style="width: 60%;display: relative; margin: 0px auto;">
+            <ion-card style="width: 60%; display: relative; margin: 0px auto">
               <img
                 alt="Silhouette of mountains"
                 src="https://ionicframework.com/docs/img/demos/card-media.png"
@@ -352,7 +407,7 @@
 
         <ion-col>
           <div class="cardPais">
-            <ion-card style="width: 60%;display: relative; margin: 0px auto;">
+            <ion-card style="width: 60%; display: relative; margin: 0px auto">
               <img
                 alt="Silhouette of mountains"
                 src="https://ionicframework.com/docs/img/demos/card-media.png"
@@ -368,23 +423,22 @@
               </ion-card-content>
             </ion-card>
           </div>
-       </ion-col>
+        </ion-col>
       </ion-row>
     </ion-grid>
   </div>
 
-
   <div class="criarConta">
     <ion-grid>
-<ion-row>
-<ion-col>
-    <img src="/imgConta" alt="imgConta" />
-</ion-col>
-  <ion-col>
-  <div class="titulo_imagens"><h2>Criar sua Conta</h2></div>
-<ion-button shape="round">Cadastrar-se</ion-button>
-</ion-col>
-  </ion-row>
-  </ion-grid>
+      <ion-row>
+        <ion-col>
+          <img src="/imgConta" alt="imgConta" />
+        </ion-col>
+        <ion-col>
+          <div class="titulo_imagens"><h2>Criar sua Conta</h2></div>
+          <ion-button shape="round">Cadastrar-se</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </div>
 </ion-content>
