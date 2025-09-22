@@ -49,6 +49,15 @@
     font-size: 30px;
   }
 
+  .titulo_imagens {
+    padding-left: 113px;
+    margin-bottom: -2%;
+
+  }
+   .texto_imagens {
+    padding-left: 113px;
+  }
+
   .titulo_imagens_accordion {
     padding-left: 113px;
     font-weight: 900;
@@ -69,6 +78,17 @@
     justify-content: center;
   }
 
+  ion-button {
+  --background: #4cbe78;
+  --background-hover: #66EE9A;
+  --background-activated: #88f4be;
+  --background-focused: #88f4be;
+
+  --color: blue;
+
+
+}
+
   ion-card {
     display: flex;
     flex-direction: column; /* Arranges content vertically within the card */
@@ -82,9 +102,11 @@
   <ion-grid style="padding-bottom: 1%;">
     <ion-list>
       <ion-item>
-        <ion-col style="right: 9%">
-          <ion-tab-button tab="tab1">
-            <h1>Nino</h1>
+        <ion-col style="right: 1%; bottom: 5%;">
+          <ion-tab-button tab="tab1" >
+            <ion-row style="display: flex; align-items: center;">
+            <ion-img src="/assets/img/icons/Group 59.svg" style="height: 8%; width: 18%; margin-right: 6%;"></ion-img><h1>Nino</h1>
+            </ion-row>
           </ion-tab-button>
         </ion-col>
 
@@ -114,7 +136,7 @@
         <ion-grid style="display: flex; align-items: row">
           <ion-col offset="3" class="entrar">
             <ion-tab-button tab="login">
-              <ion-button size="medium">Entrar</ion-button>
+              <ion-button size="medium" style="background-color: #4cbe78">Entrar</ion-button>
             </ion-tab-button>
           </ion-col>
           <ion-col style="right: 6%" class="cadastrar">
@@ -153,19 +175,19 @@
     <br /><br />
   </div>
 
-  <div class="Header_body"><h1>“Nada melhor do que uma família unida”</h1></div>
+  <div class="Header_body"><h1 style="font-size: 30px; color:#373737;"><strong>“Nada melhor do que uma família unida”</strong></h1></div>
   <br />
 
   <!--Texto imagens-->
   <div class="grupoImgText" style="display: inline;">
-    <div class="img1Text1" style="margin-top: 5%; padding: 5%">
+    <div class="img1Text1" style=" padding: 5%">
       <ion-grid>
         <ion-row style="display: flex; align-items: center; ">
           <ion-col style="padding-left: 10%;">
-            <div class="titulo_imagens">
-              <h2 style="font-size: 30px; color:#404040;"><strong>O Que Somos</strong></h2>
+            <div class="titulo">
+              <h2 style="font-size: 30px; color:#373737;"><strong>O Que Somos</strong></h2>
             </div>
-            <div class="texto_imagens">
+            <div class="texto">
               <h5
                 style="
                   display: flex;
@@ -217,10 +239,10 @@
 
 
           <ion-col>
-             <div class="titulo_imagens">
-              <h2 style="font-size: 30px; color:#404040;"><strong>O Que Somos</strong></h2>
+             <div class="titulo">
+              <h2 style="font-size: 30px; color:#373737;"><strong>O Que Somos</strong></h2>
             </div>
-            <div class="texto_imagens">
+            <div class="texto">
               <h5   style="
                   display: flex;
                   justify-content: start;
@@ -242,39 +264,33 @@
     </div>
     <br />
 
+<div style="display: flex; justify-content: center;"><ion-img src="/assets/img/Home/Group 239245.svg" style="height: 60%; width: 75%; margin-top: -3%;"></ion-img></div>
     <br />
-    <br />
-    <div class="img4Text4"  style="margin-top:15%; padding: 5% ; display: inline; text-align: center">
+
+    <div class="img4Text4"  style="margin-top:15%; padding: 5% ; display: inline;">
       <ion-grid>
         <ion-row>
           <ion-col>
-            <div class="titulo_imagens">
-              <h2><strong>Ambiente para toda a familia!</strong></h2>
-            </div>
-            <div class="texto_imagens">
-              <h5 style="font-weight: normal">
-                Queremos fazer que as futuras gerações tenham a possibilidade de
-                crescer sem a influência de um uso exagerado da internet,
-                permitindo que os pais regulamentem e monitorem o uso de
-                internet. Isso é muito importante para ajudar e conscientizar
-                sobre o possível mal uso da internet e ajudar o relacionamento
-                entre a criança e seus pais.
-              </h5>
-            </div>
+
             <ion-row>
 
   <div class="img5Text5Accordion" >
     <ion-grid>
       <ion-row>
  <ion-col>
-          <div class="titulo_imagens_accordion_topo">
-            <h4><strong>Você támbem está nessa!!</strong></h4>
-          </div>
+
+    <div class="titulo_imagens">
+              <h2 style="font-weight: 400;">Ambiente para toda a familia!</h2>
+            </div>
+            <div class="texto_imagens">
+              <h2 style=" font-size: 31px; color:#373737;" >
+                <strong>Todas as funções que vão ajudar a melhorar e proteger seus filhos online.</strong>
+              </h2>
+            </div>
 
           <div class="texto_imagens_accordion">
-            <p style="font-weight: normal;">
-              Assim como pai você deve ser exemplo do que fazer, e aqui temos
-              alguns exemplos de você para sua família
+            <p style="font-weight: normal; font-size: 18px;">
+              Clique e veja nossas ferramentas disponíveis na Nino
             </p>
           </div>
           <ion-accordion-group>
@@ -284,7 +300,7 @@
                 color="light"
                 style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px"
               >
-                <ion-label>First Accordion</ion-label>
+                <ion-label style="display: flex; align-items: center; color: #222222;"><ion-icon name="shield-half-outline" style="padding-right: 7%;"></ion-icon>Bloqueio de jogos e aplicativos</ion-label>
                 <ion-icon
                   class="ion-accordion-toggle-icon custom-icon"
                   name="caret-down"
@@ -301,7 +317,7 @@
                 color="light"
                 style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px"
               >
-                <ion-label>Second Accordion</ion-label>
+                <ion-label  style="display: flex; align-items: center; color: #222222;"><ion-icon name="apps-outline" style="padding-right: 7%;"></ion-icon>Minimalismo digital</ion-label>
                 <ion-icon
                   class="ion-accordion-toggle-icon custom-icon"
                   name="caret-down"
@@ -318,7 +334,7 @@
                 color="light"
                 style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px"
               >
-                <ion-label>Third Accordion</ion-label>
+                <ion-label  style="display: flex; align-items: center; color: #222222;"><ion-icon name="bar-chart-outline" style="padding-right: 7%;"></ion-icon>Monitoramento de atividades</ion-label>
                 <ion-icon
                   class="ion-accordion-toggle-icon custom-icon"
                   name="caret-down"
@@ -335,7 +351,7 @@
                 color="light"
                 style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px"
               >
-                <ion-label>Fourth Accordion</ion-label>
+                <ion-label  style="display: flex; align-items: center; color: #222222;"><ion-icon name="location-outline"  style="padding-right: 7%;"></ion-icon>Localize sua familia</ion-label>
                 <ion-icon
                   class="ion-accordion-toggle-icon custom-icon"
                   name="caret-down"
@@ -343,7 +359,58 @@
                 >
                 </ion-icon>
               </ion-item>
+
               <div class="ion-padding" slot="content">Fourth Content</div>
+            </ion-accordion>
+
+             <ion-accordion value="fifth" class="accordionHome">
+              <ion-item
+                slot="header"
+                color="light"
+                style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px"
+              >
+                <ion-label  style="display: flex; align-items: center; color: #222222;"><ion-icon name="camera-outline" style="padding-right: 7%;"></ion-icon> Controle remoto de câmera e áudio </ion-label>
+                <ion-icon
+                  class="ion-accordion-toggle-icon custom-icon"
+                  name="caret-down"
+                  slot="end"
+                >
+                </ion-icon>
+              </ion-item>
+              <div class="ion-padding" slot="content">Fifth Content</div>
+            </ion-accordion>
+
+ <ion-accordion value="seventh" class="accordionHome">
+              <ion-item
+                slot="header"
+                color="light"
+                style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px"
+              >
+                <ion-label  style="display: flex; align-items: center; color: #222222;"><ion-icon name="albums-outline" style="padding-right: 7%;"></ion-icon>Filtre conteúdos</ion-label>
+                <ion-icon
+                  class="ion-accordion-toggle-icon custom-icon"
+                  name="caret-down"
+                  slot="end"
+                >
+                </ion-icon>
+              </ion-item>
+              <div class="ion-padding" slot="content">seventh Content</div>
+            </ion-accordion>
+             <ion-accordion value="sixth" class="accordionHome">
+              <ion-item
+                slot="header"
+                color="light"
+                style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px"
+              >
+                <ion-label  style="display: flex; align-items: center; color: #222222;"><ion-icon name="notifications-outline" style="padding-right: 7%;"></ion-icon>Receba relátorios, alertas e SOS</ion-label>
+                <ion-icon
+                  class="ion-accordion-toggle-icon custom-icon"
+                  name="caret-down"
+                  slot="end"
+                >
+                </ion-icon>
+              </ion-item>
+              <div class="ion-padding" slot="content">sixth Content</div>
             </ion-accordion>
           </ion-accordion-group>
         </ion-col>
@@ -355,12 +422,12 @@
           </ion-col>
 
           <ion-col
-            style="display: inline; height: 200%"
+            style="display: inline; height: 200%; margin-top: 3%;"
           >
             <ion-img
               src="/assets/img/Home/Group 239230.svg"
               alt="Gabriel Costa"
-              style="height: 90%; width: 90%"
+              style="height: 80%; width: 80%"
             ></ion-img>
           </ion-col>
         </ion-row>
@@ -439,7 +506,7 @@
       </ion-row>
     </ion-grid>
   </div>
-
+<ion-footer style="display: inline; align-items: center;">
   <div class="criarConta">
     <ion-grid>
       <ion-row>
@@ -453,4 +520,5 @@
       </ion-row>
     </ion-grid>
   </div>
+  </ion-footer>
 </ion-content>
