@@ -21,8 +21,15 @@
 text-decoration: line-through;
 }
 
-.button{
-border-color: blue;
+.card1 {
+  align-items: center;
+}
+
+.linha {
+  height: 1px;
+  background-color: #ccc;
+  margin: 8px 0;
+  width: 100%;
 }
 
 </style>
@@ -91,8 +98,8 @@ border-color: blue;
 
 <ion-content [fullscreen]="true">
 
-   <div class="tituloPrecos"><h2>Titulo aleatorio site2</h2></div>
-            <div class="textoTituloPrecos">
+   <div class="tition-item-groupoPrecos"><h2>Tition-item-groupo aleatorio site2</h2></div>
+            <div class="textoTition-item-groupoPrecos">
               <h3>Texto aleatorio de para o site2</h3>
             </div>
 
@@ -100,101 +107,85 @@ border-color: blue;
 <!--CardsPrecos-->
 <ion-grid class="grupoCardsPrecos">
   <ion-row>
+<ion-col>
+            <ion-card class="cardPrecos">
+  <ion-card-header>
+    <ion-card-title><ion-row>
+                <img src="Cadeado">
+                <h2>Basico</h2>
+          </ion-row></ion-card-title>
+          <div class="linha"></div>
+          <h1>Gratuita</h1>
+          <ion-button fill="outline">Atualmente</ion-button>
+  </ion-card-header>
 
+  <ion-card-content>
+    <ion-item-group>
+            <ion-item lines="none">Bloqueio de jogos e aplicativos</ion-item>
+            <ion-item lines="none">Monitoramento de redes sociais</ion-item>
+            <ion-item lines="none">Limites de tempo diário</ion-item>
+            <ion-item lines="none">Filtro de conteúdo</ion-item>
+            <ion-item lines="none">Monitoramento de localização</ion-item>
+            <ion-item lines="none"><ion-thumbnail slot="start">
+    <img src="assets/Precooss/Certinho.png"/>
+  </ion-thumbnail>Controle de compra</ion-item>
+          </ion-item-group>
+  </ion-card-content>
+</ion-card>
+</ion-col>
     <ion-col>
             <ion-card class="cardPrecos">
   <ion-card-header>
     <ion-item class="topoCard">
+
       <ion-col>
-    <ion-card-title>Card Title</ion-card-title></ion-col>
-      <ion-col>
-      <ion-card-title>Texto para o card embaixo do titulo</ion-card-title></ion-col>
+    <ion-card-title><ion-row>
+            <img src="Cadeado">
+            <h2>Completo</h2>
+          </ion-row></ion-card-title>
+<div class="linha"></div>
+      <ion-card-title><ion-row class="card1"><h3>R$192.00/ano</h3>
+          <ion-text><ion-col>
+            <h6>R$20/mes</h6>
+            <h5 class="discount"><i>R$240/ano</i></h5></ion-col>
+          </ion-text>
+</ion-row>
+          </ion-card-title>
+</ion-col>
+
 </ion-item>
+<ion-button fill="outline">Assinar</ion-button>
   </ion-card-header>
 
   <ion-card-content>
-    Here's a small text description for the card content. Nothing more, nothing less.
+    <ion-item-group>
+            <ion-item lines="none">Bloqueio de jogos e aplicativos</ion-item>
+            <ion-item lines="none">Monitoramento de redes sociais</ion-item>
+            <ion-item lines="none">Limites de tempo diário</ion-item>
+            <ion-item lines="none">Filtro de conteúdo</ion-item>
+            <ion-item lines="none">Monitoramento de localização</ion-item>
+            <ion-item lines="none">Controle de compra</ion-item>
+            <ion-item lines="none">Controle remote camera e áudio</ion-item>
+            <ion-item lines="none">Assistente familiar (tudo)</ion-item>
+            <ion-item lines="none">Acompanhar atividades da familia.</ion-item>
+            <ion-item lines="none">Atividades em familia com recompensas (missoões,desafios em familia)</ion-item>
+
+            <ion-item lines="none">Meiosde segurança (botão de pânico, detecção de acidentes)</ion-item>
+            <ion-item lines="none">Capturas de tela automática</ion-item>
+            <ion-item lines="none">Função minimalista para o celion-item-groupar (Simplificar todo o celion-item-groupar)</ion-item>
+            <ion-item lines="none">Relatórios (com IA e sem)</ion-item>
+          </ion-item-group>
   </ion-card-content>
 </ion-card>
 </ion-col>
 
-  <ion-col>
-            <ion-card class="cardPrecos">
-  <ion-card-header>
-    <ion-card-title>Card Title</ion-card-title>
 
-  </ion-card-header>
-
-  <ion-card-content>
-    Here's a small text description for the card content. Nothing more, nothing less.
-  </ion-card-content>
-</ion-card>
-</ion-col>
 
 </ion-row>
 </ion-grid>
 
 
- <div class="textoDisponivelPara">
-              <h5>Disponivel para:</h5>
-            </div>
-            <ion-grid>
-              <ion-row>
-                <ion-col>
-                   <img src="/imgAndroid" alt="imgAndroid" />
-                </ion-col>
-                 <ion-col>
-                   <img src="/imgApple" alt="imgAndroid" />
-                </ion-col>
-                 <ion-col>
-                   <img src="/imgWindows" alt="imgAndroid" />
-                </ion-col>
-              </ion-row>
-            </ion-grid>
-
-<ion-card>
-        <img src="Cadeado">
-        <h2>Basico</h2>
-        <hr>
-        <h1>Free</h1>
-         <button>Atualmente</button>
-        <ul>
-          <li><img src="img/Certinho">Bloqueio de jogos e aplicativos</li>
-          <li><img src="img/Certinho">Monitoramento de redes sociais</li>
-          <li><img src="img/Certinho">Limites de tempo diário</li>
-          <li><img src="img/Certinho">Filtro de conteúdo</li>
-          <li><img src="img/Certinho">Monitoramento de localização</li>
-          <li><img src="img/Certinho">Controle de compra</li>
-        </ul>
-</ion-card>
-
-<ion-card>
-        <img src="Cadeado">
-        <h2>Completo</h2>
-        <hr>
-        <h1>R$192.00/ano</h1>
-        <ion-text>
-          <h5 class="discount"><i>R$240/ano</i></h5>
-          <h5><i>R$20/mes</i></h5>
-        </ion-text>
-         <button>Assinar</button>
-        <ul>
-          <li><img src="img/Certinho">Bloqueio de jogos e aplicativos</li>
-          <li><img src="img/Certinho">Monitoramento de redes sociais</li>
-          <li><img src="img/Certinho">Limites de tempo diário</li>
-          <li><img src="img/Certinho">Filtro de conteúdo</li>
-          <li><img src="img/Certinho">Monitoramento de localização</li>
-          <li><img src="img/Certinho">Controle de compra</li>
-          <li><img src="img/Certinho">Controle remote camera e áudio</li>
-          <li><img src="img/Certinho">Assistente familiar (tudo)</li>
-          <li><img src="img/Certinho">Acompanhar atividades da familia.</li>
-          <li><img src="img/Certinho">Atividades em familia com recompensas (missoões,desafios em familia)</li>
-          <li><img src="img/Certinho">Meiosde segurança (botão de pânico, detecção de acidentes)</li>
-          <li><img src="img/Certinho">Capturas de tela automática</li>
-          <li><img src="img/Certinho">Função minimalista para o celular (Simplificar todo o celular)</li>
-          <li><img src="img/Certinho">Relatórios (com IA e sem)</li>
-        </ul>
-</ion-card>
 
 
 </ion-content>
+
