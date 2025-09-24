@@ -1,3 +1,115 @@
+<style>
+ .navbar {
+    display: flex;
+    align-items: row;
+  }
+
+  .Header_body {
+    display: flex;
+    justify-content: center;
+  }
+
+  .img1Text1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  ion-accordion::part(header) {
+    padding: 8px; /* Adjust padding */
+  }
+
+  ion-accordion::part(content) {
+    padding-left: 16px; /* Adjust padding */
+  }
+
+  ion-accordion-group {
+    ion-accordion {
+      ion-accordion-toggle-icon {
+        color: green;
+      }
+    }
+  }
+
+  ion-accordion-group {
+    padding-left: 105px;
+    ion-accordion {
+      width: 98%;
+      ion-label {
+        padding: 8px;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .titulo_imagens_accordion_topo {
+    padding-left: 113px;
+    font-weight: 100;
+    font-size: 30px;
+  }
+
+  .titulo_imagens {
+    padding-left: 113px;
+    margin-bottom: -2%;
+
+  }
+   .texto_imagens {
+    padding-left: 113px;
+  }
+
+  .titulo_imagens_accordion {
+    padding-left: 113px;
+    font-weight: 900;
+    font-size: 30px;
+  }
+  .texto_imagens_accordion {
+    padding-left: 113px;
+    font-weight: 100;
+    font-size: 20px;
+  }
+
+  .custom-icon {
+    color: #4cbe78;
+  }
+
+  .titulo_cardsPais {
+    display: flex;
+    justify-content: center;
+  }
+
+   .botaoTrans {
+  --background: white;
+  --background-hover: #164327;
+  --background-activated: #88f4be;
+  --background-focused: #88f4be;
+  border: solid;
+  border-color: #4cbe78;
+
+}
+
+ .botaoCheio {
+  --background: #4cbe78;
+  --background-hover: #164327;
+  --background-activated: #88f4be;
+  --background-focused: #88f4be;
+
+
+}
+
+  ion-button {
+  --background: #4cbe78;
+  --background-hover: #164327;
+  --background-activated: #88f4be;
+  --background-focused: #88f4be;
+}
+
+  ion-card {
+    display: flex;
+    flex-direction: column; /* Arranges content vertically within the card */
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+
 
 <ion-toolbar class="navbar">
   <ion-grid style="padding-bottom: 1%;">
@@ -6,7 +118,7 @@
         <ion-col style="right: 3%; bottom: 5%;">
           <ion-tab-button tab="tab1" >
             <ion-row style="display: flex; align-items: center;">
-            <ion-img src="/assets/img/icons/Group 59.svg" style="height: 8%; width: 18%; margin-right: 7%;"></ion-img><h1>Nino</h1>
+            <ion-img src="/assets/img/icons/Group 59.svg" style="height: 8%; width: 18%; margin-right: 7%;"></ion-img><h1 style="color: #4cbe78;">Nino</h1>
             </ion-row>
           </ion-tab-button>
         </ion-col>
@@ -83,9 +195,60 @@
   <ion-button expand="block" style="background-color: #5C5CFF; font-weight: bold;">Entrar</ion-button>
 </div>
 
-<p>Não tem conta? Cadastre-se <a href="#"> Cadastre-se</a></p>
+<p>Não tem conta? <a href="#"> Cadastre-se</a></p>
 
     </ion-card>
 
   </div>
+
+    <ion-footer>
+    <div >
+      <ion-grid style="display: flex; justify-content:  start; padding: 5%; margin-top: 10%; background-color: white;">
+        <ion-list>
+          <ion-row>
+            <ion-col>
+             <ul> <h4><strong>Empresa</strong></h4></ul>
+              <ul>
+                <h6>Sobre Nós</h6>
+              </ul>
+              <ul>
+               <h6> Contate-nos</h6>
+              </ul>
+            </ion-col>
+            <ion-col>
+             <ul> <h4><strong>Produto</strong></h4></ul>
+          <ul >
+            <ion-tab-button tab="tab3">
+              <h6>Porque</h6>
+            </ion-tab-button>
+          </ul>
+          <ul >
+            <ion-tab-button tab="tab2">
+              <h6>Recursos</h6>
+            </ion-tab-button>
+          </ul>
+          <ul >
+            <ion-tab-button tab="tab4">
+              <h6>Começando</h6>
+            </ion-tab-button>
+          </ul>
+          <ul >
+            <ion-tab-button tab="precos">
+              <h6>Preços</h6>
+            </ion-tab-button>
+          </ul>
+        </ion-col>
+
+
+          </ion-row>
+        </ion-list>
+      </ion-grid>
+
+<ion-item style="display: inline; text-align: start;">
+  <ion-label>
+2025 Todos direitos reservados / Fiap School
+  </ion-label>
+</ion-item>
+    </div>
+  </ion-footer>
 </ion-content>

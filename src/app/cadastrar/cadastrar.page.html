@@ -1,93 +1,257 @@
-<ion-toolbar class="navbar" >
-  <ion-grid  >
-    <ion-list >
-      <ion-item >
+<style>
+ .navbar {
+    display: flex;
+    align-items: row;
+  }
+
+  .Header_body {
+    display: flex;
+    justify-content: center;
+  }
+
+  .img1Text1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  ion-accordion::part(header) {
+    padding: 8px; /* Adjust padding */
+  }
+
+  ion-accordion::part(content) {
+    padding-left: 16px; /* Adjust padding */
+  }
+
+  ion-accordion-group {
+    ion-accordion {
+      ion-accordion-toggle-icon {
+        color: green;
+      }
+    }
+  }
+
+  ion-accordion-group {
+    padding-left: 105px;
+    ion-accordion {
+      width: 98%;
+      ion-label {
+        padding: 8px;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .titulo_imagens_accordion_topo {
+    padding-left: 113px;
+    font-weight: 100;
+    font-size: 30px;
+  }
+
+  .titulo_imagens {
+    padding-left: 113px;
+    margin-bottom: -2%;
+
+  }
+   .texto_imagens {
+    padding-left: 113px;
+  }
+
+  .titulo_imagens_accordion {
+    padding-left: 113px;
+    font-weight: 900;
+    font-size: 30px;
+  }
+  .texto_imagens_accordion {
+    padding-left: 113px;
+    font-weight: 100;
+    font-size: 20px;
+  }
+
+  .custom-icon {
+    color: #4cbe78;
+  }
+
+  .titulo_cardsPais {
+    display: flex;
+    justify-content: center;
+  }
+
+   .botaoTrans {
+  --background: white;
+  --background-hover: #164327;
+  --background-activated: #88f4be;
+  --background-focused: #88f4be;
+  border: solid;
+  border-color: #4cbe78;
+
+}
+
+ .botaoCheio {
+  --background: #4cbe78;
+  --background-hover: #164327;
+  --background-activated: #88f4be;
+  --background-focused: #88f4be;
 
 
-     <ion-col style="right:9%">
-          <ion-tab-button tab="tab1">
-            <h1>Nino</h1>
-          </ion-tab-button>
-        </ion-col>
+}
+
+  ion-button {
+  --background: #4cbe78;
+  --background-hover: #164327;
+  --background-activated: #88f4be;
+  --background-focused: #88f4be;
+}
+
+  ion-card {
+    display: flex;
+    flex-direction: column; /* Arranges content vertically within the card */
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
 
 
-<ion-grid style="display: flex; align-items: row;">
-        <ion-col style="right:36%">
-              <ion-tab-button tab="tab3" >
-            <h6>Porque</h6>
+<ion-toolbar class="navbar">
+  <ion-grid style="padding-bottom: 1%;">
+    <ion-list>
+      <ion-item>
+        <ion-col style="right: 3%; bottom: 5%;">
+          <ion-tab-button tab="tab1" >
+            <ion-row style="display: flex; align-items: center;">
+            <ion-img src="/assets/img/icons/Group 59.svg" style="height: 8%; width: 18%; margin-right: 7%;"></ion-img><h1 style="color: #4cbe78;">Nino</h1>
+            </ion-row>
           </ion-tab-button>
         </ion-col>
-        <ion-col style="right:36%">
-               <ion-tab-button tab="tab2" >
-            <h6>Recursos</h6>
-          </ion-tab-button>
-        </ion-col>
-        <ion-col style="right:36%">
-            <ion-tab-button tab="tab4">
-            <h6>Começando</h6>
-          </ion-tab-button>
-        </ion-col>
-        <ion-col style="right:36%">
-          <ion-tab-button tab="precos">
-            <h6>Preços</h6>
-          </ion-tab-button>
-        </ion-col>
-        </ion-grid>
-
 
         <ion-grid style="display: flex; align-items: row;">
-        <ion-col offset="3"  class="entrar">
-          <ion-tab-button tab="login">
-          <ion-button size="medium">Entrar</ion-button>
-          </ion-tab-button>
-        </ion-col>
-      <ion-col style="right:6%" class="cadastrar">
-          <ion-tab-button tab="cadastrar">
-          <ion-button size="medium">cadastrar</ion-button>
-          </ion-tab-button>
-        </ion-col>
+          <ion-col style="right: 36%">
+            <ion-tab-button tab="tab3">
+              <h6>Porque</h6>
+            </ion-tab-button>
+          </ion-col>
+          <ion-col style="right: 36%">
+            <ion-tab-button tab="tab2">
+              <h6>Recursos</h6>
+            </ion-tab-button>
+          </ion-col>
+          <ion-col style="right: 36%">
+            <ion-tab-button tab="tab4">
+              <h6>Começando</h6>
+            </ion-tab-button>
+          </ion-col>
+          <ion-col style="right: 36%">
+            <ion-tab-button tab="precos">
+              <h6>Preços</h6>
+            </ion-tab-button>
+          </ion-col>
         </ion-grid>
 
-
-
-
-
-
-
+        <ion-grid style="display: flex; align-items: row">
+          <ion-col offset="3" class="entrar">
+            <ion-tab-button tab="login">
+              <ion-button size="medium"><div style="color: #F8F8F8;">Entrar</div></ion-button>
+            </ion-tab-button>
+          </ion-col>
+          <ion-col style="right: 6%" class="cadastrar">
+            <ion-tab-button tab="cadastrar">
+              <ion-button size="medium"><div style="color: #F8F8F8;">Cadastrar</div></ion-button>
+            </ion-tab-button>
+          </ion-col>
+        </ion-grid>
       </ion-item>
     </ion-list>
   </ion-grid>
 </ion-toolbar>
 
 
-<ion-content [fullscreen]="true">
+
+<ion-content [fullscreen]="true" class="background-image">
   <div style="padding-left: 30%; padding-right: 30%; margin-top: 10%;">
 
     <ion-card style="padding: 10%">
-      <div>
-        <img src="#" alt="imgNino" />
-        <h2>Nino</h2>
+<div style="margin-left: 43%;">
+      <img src="/assets/img/icons/Group 59.svg" style="width: 70px; height: 70px;">
+</div>
+      <div style="display: inline; align-items: center; text-align: center;">
+
+        <h1 style="font-weight: 250; font-size: xx-large;">Nino</h1>
       </div>
       <div>
         <ion-label><h6>Email:</h6></ion-label>
-        <ion-item><ion-input placeholder="Email"> </ion-input></ion-item>
+        <ion-item><ion-input placeholder="Email" type="email"> </ion-input></ion-item>
       </div>
             <div>
         <ion-label><h6>Senha:</h6></ion-label>
-        <ion-item><ion-input placeholder="Senha"> </ion-input></ion-item>
-      </div>
-            <div>
+        <ion-item><ion-input placeholder="Senha" type="password"><ion-input-password-toggle slot="end"></ion-input-password-toggle></ion-input></ion-item>
+      </div><br>  <div>
         <ion-label><h6>Confirmar Senha:</h6></ion-label>
-        <ion-item><ion-input placeholder="Confirmar Senha"> </ion-input></ion-item>
-      </div>
+        <ion-item><ion-input placeholder="Confirmar Senha" type="password"><ion-input-password-toggle slot="end"></ion-input-password-toggle></ion-input></ion-item>
+      </div><br>
 
 <div>
-  <ion-button>Cadastrar-se</ion-button>
+<ion-checkbox labelPlacement="end">Lembre-me</ion-checkbox>
+</div>
+<br>
+
+<div>
+  <ion-button expand="block" style="background-color: #5C5CFF; font-weight: bold;">Cadastrar</ion-button>
 </div>
 
-<p>Já possui uma conta? <a href="#">Faça login</a></p>
+<p>Já possue uma conta?<a href="#" style="top: 0;"><ion-tab-button tab="login" style="top: 0;">Faça login</ion-tab-button></a></p>
 
     </ion-card>
 
   </div>
+
+    <ion-footer>
+    <div >
+      <ion-grid style="display: flex; justify-content:  start; padding: 5%; margin-top: 10%;background-color: white">
+        <ion-list>
+          <ion-row>
+            <ion-col>
+             <ul> <h4><strong>Empresa</strong></h4></ul>
+              <ul>
+                <h6>Sobre Nós</h6>
+              </ul>
+              <ul>
+               <h6> Contate-nos</h6>
+              </ul>
+            </ion-col>
+            <ion-col>
+             <ul> <h4><strong>Produto</strong></h4></ul>
+          <ul >
+            <ion-tab-button tab="tab3">
+              <h6>Porque</h6>
+            </ion-tab-button>
+          </ul>
+          <ul >
+            <ion-tab-button tab="tab2">
+              <h6>Recursos</h6>
+            </ion-tab-button>
+          </ul>
+          <ul >
+            <ion-tab-button tab="tab4">
+              <h6>Começando</h6>
+            </ion-tab-button>
+          </ul>
+          <ul >
+            <ion-tab-button tab="precos">
+              <h6>Preços</h6>
+            </ion-tab-button>
+          </ul>
+        </ion-col>
+
+
+          </ion-row>
+        </ion-list>
+      </ion-grid>
+
+<ion-item style="display: inline; text-align: start;">
+  <ion-label>
+2025 Todos direitos reservados / Fiap School
+  </ion-label>
+</ion-item>
+    </div>
+  </ion-footer>
+
 </ion-content>

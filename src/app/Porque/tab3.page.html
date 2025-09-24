@@ -1,286 +1,466 @@
 <style>
-  .cardExplicando {
-    width: 80%;
+  .navbar {
+    display: flex;
+    align-items: row;
   }
 
-  .grupoCardExplicando{
+  .Header_body {
     display: flex;
     justify-content: center;
   }
 
-    .cardPais {
-    width: 85%;
+  .img1Text1 {
+    display: flex;
+    justify-content: center;
   }
 
-  .entrar{
-    padding-left: 10%;
-  }
-  .cadastrar{
-  padding-right: 10%;
+  ion-accordion::part(header) {
+    padding: 8px; /* Adjust padding */
   }
 
+  ion-accordion::part(content) {
+    padding-left: 16px; /* Adjust padding */
+  }
+
+  ion-accordion-group {
+    ion-accordion {
+      ion-accordion-toggle-icon {
+        color: green;
+      }
+    }
+  }
+
+  ion-accordion-group {
+    padding-left: 105px;
+    ion-accordion {
+      width: 98%;
+      ion-label {
+        padding: 8px;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .titulo_imagens_accordion_topo {
+    padding-left: 113px;
+    font-weight: 100;
+    font-size: 30px;
+  }
+
+  .titulo_imagens {
+    padding-left: 113px;
+    margin-bottom: -2%;
+  }
+  .texto_imagens {
+    padding-left: 113px;
+  }
+
+  .titulo_imagens_accordion {
+    padding-left: 113px;
+    font-weight: 900;
+    font-size: 30px;
+  }
+  .texto_imagens_accordion {
+    padding-left: 113px;
+    font-weight: 100;
+    font-size: 20px;
+  }
+
+  .custom-icon {
+    color: #4cbe78;
+  }
+
+  .titulo_cardsPais {
+    display: flex;
+    justify-content: center;
+  }
+
+  .botaoTrans {
+    --background: white;
+    --background-hover: #164327;
+    --background-activated: #88f4be;
+    --background-focused: #88f4be;
+    border: solid;
+    border-color: #4cbe78;
+  }
+
+  .botaoCheio {
+    --background: #4cbe78;
+    --background-hover: #164327;
+    --background-activated: #88f4be;
+    --background-focused: #88f4be;
+  }
+
+  ion-button {
+    --background: #4cbe78;
+    --background-hover: #164327;
+    --background-activated: #88f4be;
+    --background-focused: #88f4be;
+  }
+
+  ion-card {
+    display: flex;
+    flex-direction: column; /* Arranges content vertically within the card */
+  }
+
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 </style>
 
-<ion-toolbar class="navbar" >
-  <ion-grid  >
-    <ion-list >
-      <ion-item >
-
-
-     <ion-col style="right:9%">
+<ion-toolbar class="navbar">
+  <ion-grid style="padding-bottom: 1%">
+    <ion-list>
+      <ion-item>
+        <ion-col style="right: 3%; bottom: 5%">
           <ion-tab-button tab="tab1">
-            <h1>Nino</h1>
+            <ion-row style="display: flex; align-items: center">
+              <ion-img
+                src="/assets/img/icons/Group 59.svg"
+                style="height: 8%; width: 18%; margin-right: 7%"
+              ></ion-img>
+              <h1 style="color: #4cbe78">Nino</h1>
+            </ion-row>
           </ion-tab-button>
         </ion-col>
 
-
-<ion-grid style="display: flex; align-items: row;">
-        <ion-col style="right:36%">
-              <ion-tab-button tab="tab3" >
-            <h6>Porque</h6>
-          </ion-tab-button>
-        </ion-col>
-        <ion-col style="right:36%">
-               <ion-tab-button tab="tab2" >
-            <h6>Recursos</h6>
-          </ion-tab-button>
-        </ion-col>
-        <ion-col style="right:36%">
+        <ion-grid style="display: flex; align-items: row">
+          <ion-col style="right: 36%">
+            <ion-tab-button tab="tab3">
+              <h6>Porque</h6>
+            </ion-tab-button>
+          </ion-col>
+          <ion-col style="right: 36%">
+            <ion-tab-button tab="tab2">
+              <h6>Recursos</h6>
+            </ion-tab-button>
+          </ion-col>
+          <ion-col style="right: 36%">
             <ion-tab-button tab="tab4">
-            <h6>Começando</h6>
-          </ion-tab-button>
-        </ion-col>
-        <ion-col style="right:36%">
-          <ion-tab-button tab="precos">
-            <h6>Preços</h6>
-          </ion-tab-button>
-        </ion-col>
+              <h6>Começando</h6>
+            </ion-tab-button>
+          </ion-col>
+          <ion-col style="right: 36%">
+            <ion-tab-button tab="precos">
+              <h6>Preços</h6>
+            </ion-tab-button>
+          </ion-col>
         </ion-grid>
 
-
-        <ion-grid style="display: flex; align-items: row;">
-        <ion-col offset="3"  class="entrar">
-          <ion-tab-button tab="login">
-          <ion-button size="medium">Entrar</ion-button>
-          </ion-tab-button>
-        </ion-col>
-      <ion-col style="right:6%" class="cadastrar">
-          <ion-tab-button tab="cadastrar">
-          <ion-button size="medium">cadastrar</ion-button>
-          </ion-tab-button>
-        </ion-col>
+        <ion-grid style="display: flex; align-items: row">
+          <ion-col offset="3" class="entrar">
+            <ion-tab-button tab="login">
+              <ion-button size="medium"
+                ><div style="color: #f8f8f8">Entrar</div></ion-button
+              >
+            </ion-tab-button>
+          </ion-col>
+          <ion-col style="right: 6%" class="cadastrar">
+            <ion-tab-button tab="cadastrar">
+              <ion-button size="medium"
+                ><div style="color: #f8f8f8">Cadastrar</div></ion-button
+              >
+            </ion-tab-button>
+          </ion-col>
         </ion-grid>
-
-
-
-
-
-
-
       </ion-item>
     </ion-list>
   </ion-grid>
 </ion-toolbar>
 
-
 <ion-content [fullscreen]="true">
+  <div class="topoPorque">
+    <ion-grid>
+      <ion-col>
+        <div class="tituloPorque">
+          <h2>
+            Porque Nino é sua melhor escolha para um aplicativo de controle
+            parental, para proteger sua criança.
+          </h2>
+        </div>
+      </ion-col>
 
-<div class="topoPorque">
+      <ion-col style="display: flex; justify-content: center;">
+        <div>
+          <img src="/assets/img/porque/Group 239242.svg" />
+        </div>
+      </ion-col>
+    </ion-grid>
+  </div>
+
+  <!--Cards Explicando-->
   <ion-grid>
-    <ion-col>
- <div class="tituloPorque"><h2>Titulo aleatorio porque1</h2></div>
-            <div class="textoPorque">
-              <h3>Texto aleatorio de para o porque1</h3>
-            </div>
-            </ion-col>
-
-            <ion-col>
-               <img src="/imgEstatisticas" alt="imgEstatisticas" />
-               </ion-col>
-
-
-               <ion-col>
- <div class="tituloPorque"><h2>Titulo aleatorio porque2</h2></div>
-            <div class="textoPorque">
-              <h3>Texto aleatorio de para o porque2</h3>
-            </div>
-            </ion-col>
-
-               </ion-grid>
-               </div>
-
-
-
-               <!--Cards Explicando-->
-               <ion-grid >
-                <ion-row>
-                  <ion-col>
-                    <ion-card class="cardExplicando">
-  <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
-  <ion-card-header>
-    <ion-card-title>Card Title</ion-card-title>
-    <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-  </ion-card-header>
-
-  <ion-card-content>
-    Here's a small text description for the card content. Nothing more, nothing less.
-  </ion-card-content>
-</ion-card>
-                  </ion-col>
-                    <ion-col>
-                    <ion-card class="cardExplicando">
-  <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
-  <ion-card-header>
-    <ion-card-title>Card Title</ion-card-title>
-    <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-  </ion-card-header>
-
-  <ion-card-content>
-    Here's a small text description for the card content. Nothing more, nothing less.
-  </ion-card-content>
-</ion-card>
-                  </ion-col>
-                    <ion-col>
-                    <ion-card class="cardExplicando">
-  <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
-  <ion-card-header>
-    <ion-card-title>Card Title</ion-card-title>
-    <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-  </ion-card-header>
-
-  <ion-card-content>
-    Here's a small text description for the card content. Nothing more, nothing less.
-  </ion-card-content>
-</ion-card>
-                  </ion-col>
-                    <ion-col>
-                    <ion-card class="cardExplicando">
-  <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
-  <ion-card-header>
-    <ion-card-title>Card Title</ion-card-title>
-    <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-  </ion-card-header>
-
-  <ion-card-content>
-    Here's a small text description for the card content. Nothing more, nothing less.
-  </ion-card-content>
-</ion-card>
+    <ion-row>
+      <ion-col>
+        <ion-card class="cardExplicando">
+          <ion-grid>
+            <ion-row>
+              <ion-col style="text-align: center">
+                <h6>Exposição a conteúdo impróprio</h6>
               </ion-col>
-                </ion-row>
-
-
-
-                <ion-row>
-  <ion-col>
-                  <ion-card class="cardExplicando">
-  <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
-  <ion-card-header>
-    <ion-card-title>Card Title</ion-card-title>
-    <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-  </ion-card-header>
-
-  <ion-card-content>
-    Here's a small text description for the card content. Nothing more, nothing less.
-  </ion-card-content>
-</ion-card>
+              <ion-col style="display: flex; justify-content: end">
+                <img
+                  alt="Silhouette of mountains"
+                  src="/assets/img/porque/Group 239272.svg"
+                  style="width: 50%; height: 70%"
+                />
               </ion-col>
-               <ion-col>
-                  <ion-card class="cardExplicando">
-  <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
-  <ion-card-header>
-    <ion-card-title>Card Title</ion-card-title>
-    <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-  </ion-card-header>
+            </ion-row>
 
-  <ion-card-content>
-    Here's a small text description for the card content. Nothing more, nothing less.
-  </ion-card-content>
-</ion-card>
+            <ion-card-content>
+              <ion-card-subtitle
+                >A internet pode expor crianças e adolescentes a violência,
+                pornografia ou desinformação. Filtrar conteúdos e acompanhar o
+                que é acessado são formas de reduzir riscos.</ion-card-subtitle
+              >
+            </ion-card-content>
+          </ion-grid>
+        </ion-card>
+      </ion-col>
+
+      <ion-col>
+        <ion-card class="cardExplicando">
+          <ion-grid>
+            <ion-row>
+              <ion-col style="text-align: center">
+                <h6>Privacidade online</h6>
               </ion-col>
-               <ion-col>
-                  <ion-card class="cardExplicando">
-  <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
-  <ion-card-header>
-    <ion-card-title>Card Title</ion-card-title>
-    <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-  </ion-card-header>
-
-  <ion-card-content>
-    Here's a small text description for the card content. Nothing more, nothing less.
-  </ion-card-content>
-</ion-card>
+              <ion-col style="display: flex; justify-content: end">
+                <img
+                  alt="Silhouette of mountains"
+                  src="/assets/img/porque/Group 239273.svg"
+                  style="width: 50%; height: 70%"
+                />
               </ion-col>
-               <ion-col>
-                  <ion-card class="cardExplicando">
-  <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
-  <ion-card-header>
-    <ion-card-title>Card Title</ion-card-title>
-    <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-  </ion-card-header>
+            </ion-row>
 
-  <ion-card-content>
-    Here's a small text description for the card content. Nothing more, nothing less.
-  </ion-card-content>
-</ion-card>
+            <ion-card-content>
+              <ion-card-subtitle
+                >51% dos adolescentes usam o Facebook. O Qustodio ajuda você a
+                garantir que eles não compartilhem informações pessoais ou
+                troquem mensagens inadequadas com estranhos.</ion-card-subtitle
+              >
+            </ion-card-content>
+          </ion-grid>
+        </ion-card>
+      </ion-col>
+
+      <ion-col>
+        <ion-card class="cardExplicando">
+          <ion-grid>
+            <ion-row>
+              <ion-col style="text-align: center">
+                <h6>Sedentarismo</h6>
               </ion-col>
+              <ion-col style="display: flex; justify-content: end">
+                <img
+                  alt="Silhouette of mountains"
+                  src="/assets/img/porque/Group 239274.svg"
+                  style="width: 50%; height: 70%"
+                />
+              </ion-col>
+            </ion-row>
 
-                </ion-row>
-               </ion-grid>
+            <ion-card-content>
+              <ion-card-subtitle
+                >Ficar muito tempo em frente às telas pode causar problemas de
+                postura, obesidade e fadiga ocular. Pausas regulares e a prática
+                de atividades físicas são fundamentais para o
+                bem-estar.</ion-card-subtitle
+              >
+            </ion-card-content>
+          </ion-grid>
+        </ion-card>
+      </ion-col>
 
+      <ion-col>
+        <ion-card class="cardExplicando">
+          <ion-grid>
+            <ion-row>
+              <ion-col style="text-align: center">
+                <h6>Problemas de saúde mental</h6>
+              </ion-col>
+              <ion-col style="display: flex; justify-content: end">
+                <img
+                  alt="Silhouette of mountains"
+                  src="/assets/img/porque/Group 239275.svg"
+                  style="width: 50%; height: 70%"
+                />
+              </ion-col>
+            </ion-row>
 
+            <ion-card-content>
+              <ion-card-subtitle
+                >A depressão severa aumentou 58% desde 2010, coincidindo com um
+                aumento na posse de telefones celulares. O Qustodio pode
+                ajudá-lo a limitar a quantidade de tempo que seu filho passa na
+                frente das telas.</ion-card-subtitle
+              >
+            </ion-card-content>
+          </ion-grid>
+        </ion-card>
+      </ion-col>
+    </ion-row>
 
+    <ion-row>
+      <ion-col>
+        <ion-card class="cardExplicando">
+          <ion-grid>
+            <ion-row>
+              <ion-col style="text-align: center">
+                <h6>Vício em jogos online</h6>
+              </ion-col>
+              <ion-col style="display: flex; justify-content: end">
+                <img
+                  alt="Silhouette of mountains"
+                  src="/assets/img/porque/Group 239276.svg"
+                  style="width: 50%; height: 70%"
+                />
+              </ion-col>
+            </ion-row>
 
+            <ion-card-content>
+              <ion-card-subtitle
+                >Muitos adolescentes passam horas jogando, o que pode afetar sua
+                rotina escolar e social.</ion-card-subtitle
+              >
+            </ion-card-content>
+          </ion-grid>
+        </ion-card>
+      </ion-col>
 
+      <ion-col>
+        <ion-card class="cardExplicando">
+          <ion-grid>
+            <ion-row>
+              <ion-col style="text-align: center">
+                <h6>Problemas de sono</h6>
+              </ion-col>
+              <ion-col style="display: flex; justify-content: end">
+                <img
+                  alt="Silhouette of mountains"
+                  src="/assets/img/porque/Group 239277.svg"
+                  style="width: 50%; height: 70%"
+                />
+              </ion-col>
+            </ion-row>
 
+            <ion-card-content>
+              <ion-card-subtitle
+                >73% dos alunos do ensino médio não dormem o suficiente. Isso
+                pode levar a dificuldades de aprendizagem, mau humor e conflitos
+                interpessoais. Use o Qustodio para definir horas de descanso
+                antes de dormir, para que seus filhos possam evitar a luz azul
+                que perturba o sono.</ion-card-subtitle
+              >
+            </ion-card-content>
+          </ion-grid>
+        </ion-card>
+      </ion-col>
 
-                <div class="img5Text5Accordion">
+      <ion-col>
+        <ion-card class="cardExplicando">
+          <ion-grid>
+            <ion-row>
+              <ion-col style="text-align: center">
+                <h6>Predadores online</h6>
+              </ion-col>
+              <ion-col style="display: flex; justify-content: end">
+                <img
+                  alt="Silhouette of mountains"
+                  src="/assets/img/porque/Group 239278.svg"
+                  style="width: 50%; height: 70%"
+                />
+              </ion-col>
+            </ion-row>
+
+            <ion-card-content>
+              <ion-card-subtitle
+                >50% das vítimas de exploração online têm entre 12 e 15 anos. Os
+                artigos de orientação do Qustodio ajudam você a conversar com
+                seus filhos sobre como localizar e evitar ladrões de dados,
+                aliciadores, predadores sexuais e
+                perseguidores.</ion-card-subtitle
+              >
+            </ion-card-content>
+          </ion-grid>
+        </ion-card>
+      </ion-col>
+
+      <ion-col>
+        <ion-card class="cardExplicando">
+          <ion-grid>
+            <ion-row>
+              <ion-col style="text-align: center">
+                <h6>Cyberbullying</h6>
+              </ion-col>
+              <ion-col style="display: flex; justify-content: end">
+                <img
+                  alt="Silhouette of mountains"
+                  src="/assets/img/porque/Group 239279.svg"
+                  style="width: 50%; height: 70%"
+                />
+              </ion-col>
+            </ion-row>
+
+            <ion-card-content>
+              <ion-card-subtitle
+                >Cerca de 37% dos adolescentes já sofreram algum tipo de assédio
+                online.
+              </ion-card-subtitle>
+            </ion-card-content>
+          </ion-grid>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div class="img5Text5Accordion">
     <ion-grid>
       <ion-row>
         <ion-col>
-    <div class="titulo_imagens"><h2>Titulo aleatorio site5</h2></div>
-    <div class="texto_imagens"><h3>Texto aleatorio de para o site5</h3></div>
-    <ion-accordion-group>
-      <ion-accordion value="first">
-        <ion-item slot="header" color="light">
-          <ion-label>First Accordion</ion-label>
-        </ion-item>
-        <div class="ion-padding" slot="content">First Content</div>
-      </ion-accordion>
+          <div class="titulo_imagens"><h2>Titulo aleatorio site5</h2></div>
+          <div class="texto_imagens">
+            <h3>Texto aleatorio de para o site5</h3>
+          </div>
+          <ion-accordion-group>
+            <ion-accordion value="first">
+              <ion-item slot="header" color="light">
+                <ion-label>First Accordion</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">First Content</div>
+            </ion-accordion>
 
-      <ion-accordion value="second">
-        <ion-item slot="header" color="light">
-          <ion-label>Second Accordion</ion-label>
-        </ion-item>
-        <div class="ion-padding" slot="content">Second Content</div>
-      </ion-accordion>
+            <ion-accordion value="second">
+              <ion-item slot="header" color="light">
+                <ion-label>Second Accordion</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">Second Content</div>
+            </ion-accordion>
 
-      <ion-accordion value="third">
-        <ion-item slot="header" color="light">
-          <ion-label>Third Accordion</ion-label>
-        </ion-item>
-        <div class="ion-padding" slot="content">Third Content</div>
-      </ion-accordion>
+            <ion-accordion value="third">
+              <ion-item slot="header" color="light">
+                <ion-label>Third Accordion</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">Third Content</div>
+            </ion-accordion>
 
-      <ion-accordion value="fourth">
-        <ion-item slot="header" color="light">
-          <ion-label>Fourth Accordion</ion-label>
-        </ion-item>
-        <div class="ion-padding" slot="content">Fourth Content</div>
-      </ion-accordion>
-    </ion-accordion-group>
-    </ion-col>
-  <ion-col>
-    <div style=" margin-top: 25%; margin-left: 20%;">
-    <img src="/img5" alt="img5home" />
+            <ion-accordion value="fourth">
+              <ion-item slot="header" color="light">
+                <ion-label>Fourth Accordion</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">Fourth Content</div>
+            </ion-accordion>
+          </ion-accordion-group>
+        </ion-col>
+        <ion-col>
+          <div style="margin-top: 25%; margin-left: 20%">
+            <img src="/img5" alt="img5home" />
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </div>
-  </ion-col>
-  </ion-row>
-</ion-grid>
-  </div>
 
-
-
-   <!--Cards dos Pais-->
+  <!--Cards dos Pais-->
   <div class="cardsPaiscomTitulo">
     <div class="titulo_cardsPais"><h2>Titulo aleatorio Pais</h2></div>
     <ion-grid>
@@ -343,31 +523,23 @@
               </ion-card-content>
             </ion-card>
           </div>
-       </ion-col>
+        </ion-col>
       </ion-row>
     </ion-grid>
   </div>
 
-   <!--Criar Conta-->
+  <!--Criar Conta-->
   <div class="criarConta">
     <ion-grid>
-<ion-row>
-<ion-col>
-    <img src="/imgConta" alt="imgConta" />
-</ion-col>
-  <ion-col>
-  <div class="titulo_imagens"><h2>Criar sua Conta</h2></div>
-<ion-button shape="round">Cadastrar-se</ion-button>
-</ion-col>
-  </ion-row>
-  </ion-grid>
+      <ion-row>
+        <ion-col>
+          <img src="/imgConta" alt="imgConta" />
+        </ion-col>
+        <ion-col>
+          <div class="titulo_imagens"><h2>Criar sua Conta</h2></div>
+          <ion-button shape="round">Cadastrar-se</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </div>
-
-
-
-
-
-
-
-
 </ion-content>
