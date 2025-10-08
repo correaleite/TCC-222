@@ -1,14 +1,113 @@
 <style>
-  .cardPais {
-    width: 85%;
+ .navbar {
+    display: flex;
+    align-items: row;
   }
 
-  .entrar {
-    padding-left: 10%;
+  .Header_body {
+    display: flex;
+    justify-content: center;
   }
-  .cadastrar {
-    padding-right: 10%;
+
+  .img1Text1 {
+    display: flex;
+    justify-content: center;
   }
+
+  ion-accordion::part(header) {
+    padding: 8px; /* Adjust padding */
+  }
+
+  ion-accordion::part(content) {
+    padding-left: 16px; /* Adjust padding */
+  }
+
+  ion-accordion-group {
+    ion-accordion {
+      ion-accordion-toggle-icon {
+        color: green;
+      }
+    }
+  }
+
+  ion-accordion-group {
+    padding-left: 105px;
+    ion-accordion {
+      width: 98%;
+      ion-label {
+        padding: 8px;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .titulo_imagens_accordion_topo {
+    padding-left: 113px;
+    font-weight: 100;
+    font-size: 30px;
+  }
+
+  .titulo_imagens {
+    padding-left: 113px;
+    margin-bottom: -2%;
+
+  }
+   .texto_imagens {
+    padding-left: 113px;
+  }
+
+  .titulo_imagens_accordion {
+    padding-left: 113px;
+    font-weight: 900;
+    font-size: 30px;
+  }
+  .texto_imagens_accordion {
+    padding-left: 113px;
+    font-weight: 100;
+    font-size: 20px;
+  }
+
+  .custom-icon {
+    color: #4cbe78;
+  }
+
+  .titulo_cardsPais {
+    display: flex;
+    justify-content: center;
+  }
+
+   .botaoTrans {
+  --background: white;
+  --background-hover: #164327;
+  --background-activated: #88f4be;
+  --background-focused: #88f4be;
+  border: solid;
+  border-color: #4cbe78;
+
+}
+
+ .botaoCheio {
+  --background: #4cbe78;
+  --background-hover: #164327;
+  --background-activated: #88f4be;
+  --background-focused: #88f4be;
+
+
+}
+
+  ion-button {
+  --background: #4cbe78;
+  --background-hover: #164327;
+  --background-activated: #88f4be;
+  --background-focused: #88f4be;
+}
+
+  ion-card {
+    display: flex;
+    flex-direction: column; /* Arranges content vertically within the card */
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 </style>
 <ion-toolbar class="navbar" >
   <ion-grid  >
@@ -62,10 +161,6 @@
 
 
 
-
-
-
-
       </ion-item>
     </ion-list>
   </ion-grid>
@@ -73,20 +168,20 @@
 
 
 <ion-content [fullscreen]="true">
-  <ion-label>
-    <h1>Como se juntar a nós?</h1>
+  <ion-label style="display: flex; margin-top: 8%; justify-content: center;" >
+<strong> <h1>Como se juntar a nós?</h1></strong>
   </ion-label>
 
-  <ion-grid>
+  <ion-grid style="text-align: center;">
     <ion-row>
       <ion-col>
-        <ion-button shape="round"></ion-button>
+        <ion-button shape="round">Como criar sua Conta</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button shape="round"></ion-button>
+        <ion-button shape="round">Como conectar</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button shape="round"></ion-button>
+        <ion-button shape="round">Crie sua conta hoje!</ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>
@@ -96,59 +191,74 @@
       <ion-col>
         <div class="titulo_imagens"><h2>Filhos</h2></div>
         <div class="texto_imagens">
-          <h3>Texto aleatorio de para o site1</h3>
+          <h3>Aplicativo para as crianças</h3>
         </div>
 <ion-grid>
   <ion-row>
     <ion-col>
         <ion-accordion-group>
-        <ion-accordion value="first">
-            <ion-item slot="header" color="light">
-              <ion-label>First Accordion</ion-label>
-            </ion-item>
-            <div class="ion-padding" slot="content">First Content</div>
-          </ion-accordion>
-          <ion-accordion value="second">
-            <ion-item slot="header" color="light">
-              <ion-label>Second Accordion</ion-label>
-            </ion-item>
-            <div class="ion-padding" slot="content">Second Content</div>
-          </ion-accordion>
-          <ion-accordion value="third">
-            <ion-item slot="header" color="light">
-              <ion-label>Third Accordion</ion-label>
-            </ion-item>
-            <div class="ion-padding" slot="content">Third Content</div>
-          </ion-accordion>
+      <ion-accordion value="first" class="accordionHome">
+              <ion-item
+                slot="header"
+                color="light"
+                style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px"
+              >
+                <ion-label style="display: flex; align-items: center; color: #222222;"><ion-icon name="shield-half-outline" style="padding-right: 7%;"></ion-icon>Bloqueio de jogos e aplicativos</ion-label>
+                <ion-icon
+                  class="ion-accordion-toggle-icon custom-icon"
+                  name="caret-down"
+                  slot="end"
+                >
+                </ion-icon>
+              </ion-item>
+              <div class="ion-padding" slot="content">First Content</div>
+            </ion-accordion>
+
+
+          <ion-accordion value="second" class="accordionHome">
+              <ion-item
+                slot="header"
+                color="light"
+                style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px"
+              >
+                <ion-label style="display: flex; align-items: center; color: #222222;"><ion-icon name="shield-half-outline" style="padding-right: 7%;"></ion-icon>Bloqueio de jogos e aplicativos</ion-label>
+                <ion-icon
+                  class="ion-accordion-toggle-icon custom-icon"
+                  name="caret-down"
+                  slot="end"
+                >
+                </ion-icon>
+              </ion-item>
+              <div class="ion-padding" slot="content">First Content</div>
+            </ion-accordion>
+
+
+       <ion-accordion value="third" class="accordionHome">
+              <ion-item
+                slot="header"
+                color="light"
+                style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px"
+              >
+                <ion-label style="display: flex; align-items: center; color: #222222;"><ion-icon name="shield-half-outline" style="padding-right: 7%;"></ion-icon>Bloqueio de jogos e aplicativos</ion-label>
+                <ion-icon
+                  class="ion-accordion-toggle-icon custom-icon"
+                  name="caret-down"
+                  slot="end"
+                >
+                </ion-icon>
+              </ion-item>
+              <div class="ion-padding" slot="content">First Content</div>
+            </ion-accordion>
+
+
         </ion-accordion-group>
 </ion-col>
-<ion-col>
-        <ion-accordion-group>
-          <ion-accordion value="first">
-            <ion-item slot="header" color="light">
-              <ion-label>First Accordion</ion-label>
-            </ion-item>
-            <div class="ion-padding" slot="content">First Content</div>
-          </ion-accordion>
-          <ion-accordion value="second">
-            <ion-item slot="header" color="light">
-              <ion-label>Second Accordion</ion-label>
-            </ion-item>
-            <div class="ion-padding" slot="content">Second Content</div>
-          </ion-accordion>
-          <ion-accordion value="third">
-            <ion-item slot="header" color="light">
-              <ion-label>Third Accordion</ion-label>
-            </ion-item>
-            <div class="ion-padding" slot="content">Third Content</div>
-          </ion-accordion>
-        </ion-accordion-group>
-</ion-col>
+
         </ion-row>
       </ion-grid>
       </ion-col>
       <ion-col>
-        <img src="/img1" alt="img1home" />
+        <img src="/assets/img/comecando/Group 239304.svg" alt="img1home" />
       </ion-col>
     </ion-row>
   </ion-grid>
@@ -158,40 +268,18 @@
 <ion-grid>
     <ion-row>
          <ion-col>
-        <img src="/img1" alt="img1home" />
+        <img src="/assets/img/comecando/Group 239306.svg" alt="img1home" />
       </ion-col>
       <ion-col>
         <div class="titulo_imagens"><h2>Pais</h2></div>
         <div class="texto_imagens">
-          <h3>Texto aleatorio de para o site1</h3>
+          <h3>Interface para os responsáveis</h3>
         </div>
 <ion-grid>
   <ion-row>
     <ion-col>
         <ion-accordion-group>
         <ion-accordion value="first">
-            <ion-item slot="header" color="light">
-              <ion-label>First Accordion</ion-label>
-            </ion-item>
-            <div class="ion-padding" slot="content">First Content</div>
-          </ion-accordion>
-          <ion-accordion value="second">
-            <ion-item slot="header" color="light">
-              <ion-label>Second Accordion</ion-label>
-            </ion-item>
-            <div class="ion-padding" slot="content">Second Content</div>
-          </ion-accordion>
-          <ion-accordion value="third">
-            <ion-item slot="header" color="light">
-              <ion-label>Third Accordion</ion-label>
-            </ion-item>
-            <div class="ion-padding" slot="content">Third Content</div>
-          </ion-accordion>
-        </ion-accordion-group>
-</ion-col>
-<ion-col>
-        <ion-accordion-group>
-          <ion-accordion value="first">
             <ion-item slot="header" color="light">
               <ion-label>First Accordion</ion-label>
             </ion-item>
@@ -219,50 +307,7 @@
 <br><br>
 
 
-    <div class="img1Text1">
-      <ion-grid>
-        <ion-row>
-          <ion-col>
-            <img src="/img1" alt="img1home" />
-          </ion-col>
-          <ion-col>
-            <div class="titulo_imagens"><h2>Titulo aleatorio site1</h2></div>
-            <div class="texto_imagens">
-              <h3>Texto aleatorio de para o site1</h3>
-            </div>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    </div>
-    <br /><br />
-    <div class="img2Text2">
-      <ion-grid>
-        <ion-row>
-          <ion-col>
-            <div class="titulo_imagens"><h2>Titulo aleatorio site2</h2></div>
-            <div class="texto_imagens">
-              <h3>Texto aleatorio de para o site2</h3>
-            </div>
-          </ion-col>
-          <ion-col>
-            <img src="/img2" alt="img2home" />
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    </div>
 <br><br>
-  <div class="criarConta">
-    <ion-grid>
-<ion-row>
-<ion-col>
-    <img src="/imgConta" alt="imgConta" />
-</ion-col>
-  <ion-col>
-  <div class="titulo_imagens"><h2>Criar sua Conta</h2></div>
-<ion-button shape="round">Cadastrar-se</ion-button>
-</ion-col>
-  </ion-row>
-  </ion-grid>
-  </div>
+
 
 </ion-content>
