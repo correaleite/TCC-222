@@ -168,7 +168,9 @@
 <ion-content [fullscreen]="true" class="background-image">
   <div style="padding-left: 30%; padding-right: 30%; margin-top: 10%;">
 
+
     <ion-card style="padding: 10%">
+       <form (ngSubmit)="cadastrar()">
 <div style="margin-left: 43%;">
       <img src="/assets/img/icons/Group 59.svg" style="width: 70px; height: 70px;">
 </div>
@@ -178,11 +180,11 @@
       </div>
       <div>
         <ion-label><h6>Email:</h6></ion-label>
-        <ion-item><ion-input placeholder="Email" type="email"> </ion-input></ion-item>
+        <ion-item><ion-input placeholder="Email" type="email" [(ngModel)]="email" name="email" required> </ion-input></ion-item>
       </div>
             <div>
         <ion-label><h6>Senha:</h6></ion-label>
-        <ion-item><ion-input placeholder="Senha" type="password"><ion-input-password-toggle slot="end"></ion-input-password-toggle></ion-input></ion-item>
+        <ion-item><ion-input placeholder="Senha" type="password" [(ngModel)]="senha" name="senha" required minlenght="6"><ion-input-password-toggle slot="end"></ion-input-password-toggle></ion-input></ion-item>
       </div><br>  <div>
         <ion-label><h6>Confirmar Senha:</h6></ion-label>
         <ion-item><ion-input placeholder="Confirmar Senha" type="password"><ion-input-password-toggle slot="end"></ion-input-password-toggle></ion-input></ion-item>
@@ -194,8 +196,9 @@
 <br>
 
 <div>
-  <ion-button expand="block" style="background-color: #5C5CFF; font-weight: bold;">Cadastrar</ion-button>
+  <ion-button expand="block"  type="submit" [disabled]="!email || !senha || senha.length < 6" style="background-color: #5C5CFF; font-weight: bold;">Cadastrar</ion-button>
 </div>
+</form>
 
 <p>Já possue uma conta?<a href="#" style="top: 0;"><ion-tab-button tab="login" style="top: 0;">Faça login</ion-tab-button></a></p>
 

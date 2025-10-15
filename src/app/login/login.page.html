@@ -178,11 +178,11 @@
       </div>
       <div>
         <ion-label><h6>Email:</h6></ion-label>
-        <ion-item><ion-input placeholder="Email"> </ion-input></ion-item>
+        <ion-item><ion-input type="email" [(ngModel)]="email" placeholder="Email"> </ion-input></ion-item>
       </div>
             <div>
         <ion-label><h6>Senha:</h6></ion-label>
-        <ion-item><ion-input placeholder="Senha" type="password"><ion-input-password-toggle slot="end"></ion-input-password-toggle></ion-input></ion-item>
+        <ion-item><ion-input placeholder="Senha" type="password" [(ngModel)]="senha"><ion-input-password-toggle slot="end"></ion-input-password-toggle></ion-input></ion-item>
       </div><br>
 <div>
 <ion-checkbox labelPlacement="end">Lembre-me</ion-checkbox>
@@ -192,7 +192,10 @@
 <p><a href="#">Esqueci minha senha</a></p>
 </div>
 <div>
-  <ion-button expand="block" style="background-color: #5C5CFF; font-weight: bold;">Entrar</ion-button>
+  <ion-button expand="block" (click)="login()" style="background-color: #5C5CFF; font-weight: bold;">Entrar</ion-button>
+</div>
+<div>
+  <ion-button expand="block" (click)="loginGoogle()" style="background-color: #5C5CFF; font-weight: bold;">Entrar com Google</ion-button>
 </div>
 
 <p>Não tem conta? <a href="#"> Cadastre-se</a></p>
