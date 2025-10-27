@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '',
+    redirectTo: '/home',
     pathMatch: 'full'
   },
   {
@@ -19,9 +19,24 @@ const routes: Routes = [
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
-
-
+  {
+    path: 'porque',
+    loadChildren: () => import('./Porque/tab3.module').then( m => m.Tab3PageModule)
+  },
+  {
+    path: 'recursos',
+    loadChildren: () => import('./Recursos/tab2.module').then( m => m.Tab2PageModule)
+  },
+  {
+    path: 'comecando',
+    loadChildren: () => import('./Comecando/tab4.module').then( m => m.Tab4PageModule)
+  },
+  {
+    path: 'precos',
+    loadChildren: () => import('./precos/precos.module').then( m => m.PrecosPageModule)
+  },
 ];
+
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
