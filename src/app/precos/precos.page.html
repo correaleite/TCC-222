@@ -3,7 +3,7 @@
     width: 90%;
 
   }
-  
+
 .background-image{
     --background: url('/assets/img/precos/Vetores do fundo.png')  no-repeat center center / cover;
     background-color: white;
@@ -13,6 +13,10 @@
   h5 {
     font-size: 24px;
   }
+
+  .header_menu{
+color: #1B1B1B;
+}
 
   .title1 {
   text-align: center;
@@ -72,59 +76,65 @@ text-decoration: line-through;
 }
 
 
+.botaoCheio {
+  --background: #4cbe78;
+  --background-hover: #164327;
+  --background-activated: #88f4be;
+  --background-focused: #88f4be;
+
+}
+
+
 </style>
 
 
-<ion-toolbar class="navbar" >
-<ion-grid  >
-<ion-list >
-<ion-item >
+<ion-toolbar class="navbar">
+  <ion-grid style="padding-bottom: 1%;">
+    <ion-list>
+      <ion-item>
+        <ion-col style="bottom: 5%;">
+          <ion-row style="display: flex; align-items: center;"> <ion-button fill="clear" routerLink="/home" >
+<ion-row>
+            <ion-img src="/assets/img/icons/Group 59.svg" style=" width: 20%; padding-right: 6%; "></ion-img><h1 style="color: #4cbe78;">Nino</h1>
+</ion-row>
+          </ion-button>       </ion-row>
+        </ion-col>
 
-     <ion-col style="right:9%">
-<ion-button fill="clear" routerLink="/home">
-<h1>Nino</h1>
-</ion-button>
-</ion-col>
+         <ion-grid style="display: flex; align-items: row;">
+           <ion-col style="right: 36%">
+             <ion-button fill="clear" routerLink="/porque">
+               <h6 class="header_menu">Porque</h6>
+             </ion-button>
+           </ion-col>
+           <ion-col style="right: 36%">
+             <ion-button fill="clear" routerLink="/recursos">
+               <h6 class="header_menu">Recursos</h6>
+             </ion-button>
+           </ion-col>
+           <ion-col style="right: 36%">
+             <ion-button fill="clear" routerLink="/comecando">
+               <h6 class="header_menu">Começando</h6>
+             </ion-button>
+           </ion-col>
+           <ion-col style="right: 36%">
+             <ion-button fill="clear" routerLink="/precos">
+               <h6 class="header_menu">Preços</h6>
+             </ion-button>
+           </ion-col>
+         </ion-grid>
 
-
-<ion-grid style="display: flex; align-items: row;">
-<ion-col style="right:36%">
-<ion-button fill="clear" routerLink="/porque">
-<h6>Porque</h6>
-</ion-button>
-</ion-col>
-<ion-col style="right:36%">
-<ion-button fill="clear" routerLink="/recursos">
-<h6>Recursos</h6>
-</ion-button>
-</ion-col>
-<ion-col style="right:36%">
-<ion-button fill="clear" routerLink="/comecando">
-<h6>Começando</h6>
-</ion-button>
-</ion-col>
-<ion-col style="right:36%">
-<ion-button fill="clear" routerLink="/precos">
-<h6>Preços</h6>
-</ion-button>
-</ion-col>
-</ion-grid>
-
-
-        <ion-grid style="display: flex; align-items: row;">
-<ion-col offset="3"  class="entrar">
-<ion-button size="medium" routerLink="/login">Entrar</ion-button>
-</ion-col>
-<ion-col style="right:6%" class="cadastrar">
-<ion-button size="medium" routerLink="/register">cadastrar</ion-button>
-</ion-col>
-</ion-grid>
-
+        <ion-grid style="display: flex; align-items: row">
+          <ion-col offset="3" class="entrar">
+            <ion-button class="botaoCheio" size="medium" routerLink="/login"><div style="color: #F8F8F8; ">Entrar</div></ion-button>
+          </ion-col>
+          <ion-col style="right: 6%" class="cadastrar">
+            <ion-button class="botaoCheio" size="medium" routerLink="/register"><div style="color: #F8F8F8;">Cadastrar</div></ion-button>
+          </ion-col>
+        </ion-grid>
       </ion-item>
-</ion-list>
-</ion-grid>
+    </ion-list>
+  </ion-grid>
 </ion-toolbar>
-
 
 
 
