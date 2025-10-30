@@ -79,6 +79,10 @@ color: #1B1B1B;
     justify-content: center;
   }
 
+   .titulojuntar{
+    font-size: 40px;
+  }
+
   .botaoTrans {
     --background: white;
     --background-hover: #164327;
@@ -97,7 +101,9 @@ color: #1B1B1B;
 
   ion-card {
     display: flex;
-    flex-direction: column; /* Arranges content vertically within the card */
+    flex-direction: column;
+
+     /* Arranges content vertically within the card */
   }
 
   @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
@@ -154,9 +160,15 @@ color: #1B1B1B;
 <ion-content [fullscreen]="true">
   <div class="topoPorque">
     <ion-grid>
+       <ion-label style="display: flex; margin-top: 3%; justify-content: center;">
+        <ion-col>
+<strong> <h1 class="titulojuntar"  style="display: flex; justify-content: center;">Nós garantimos a segurança</h1></strong>
+<strong> <h1 class="titulojuntar"  style="display: flex; justify-content: center;"> e o equilíbrio digital do seu filho</h1></strong>
+</ion-col>
+  </ion-label>
       <ion-col>
         <div class="tituloPorque">
-          <h2  style="display: flex; text-align: center; font-weight: 400; padding-top: 10%; padding-right: 10%; padding-left: 10%; font-size: 125%;">
+          <h2  style="display: flex; text-align: center; font-weight: 400; padding-top: 0%; padding-right: 10%; padding-left: 10%; font-size: 125%; ">
             Porque Nino é sua melhor escolha para um aplicativo de controle
             parental, para proteger sua criança.
           </h2>
@@ -172,21 +184,26 @@ color: #1B1B1B;
   </div>
 
   <!--Cards Explicando-->
-<div class="Header_body" ><h1 style="font-size: 30px; color:#373737; margin-top: 8%;"><strong>Problemas Causados</strong></h1></div>
-  <ion-grid>
-    <ion-row>
+<div class="Header_body" ><h1 style="font-size: 30px; color:#373737; margin-top: 4%;"><strong>Muito tempo online expões as criaças a mais riscos</strong></h1></div>
+  <div class="tituloPorque">
+          <h2  style="display: flex; text-align: center; font-weight: 400; margin-top: -0.5%; padding-right: 10%; padding-left: 10%; font-size: 125%; ">
+            Sabemos que todas crianças correm risco online, possuimos as ferramentas certas para você e sua familia
+          </h2>
+        </div>
+  <ion-grid style="margin-top: 6%;">
+    <ion-row style="margin-bottom: 10%;">
       <ion-col>
-        <ion-card class="cardExplicando">
+        <ion-card class="cardExplicando" style="height: 120%;">
           <ion-grid>
             <ion-row>
-              <ion-col style="text-align: center">
-                <h6>Exposição a conteúdo impróprio</h6>
+              <ion-col style="padding-left: 6%;">
+                <h5 style="font-weight: 600; color:#373737; ">Exposição a conteúdo impróprio</h5>
               </ion-col>
               <ion-col style="display: flex; justify-content: end">
                 <img
                   alt="Silhouette of mountains"
                   src="/assets/img/porque/Group 239272.svg"
-                  style="width: 50%; height: 70%"
+                  style="width: 40%; height: 70%"
                 />
               </ion-col>
             </ion-row>
@@ -203,12 +220,13 @@ color: #1B1B1B;
       </ion-col>
 
       <ion-col>
-        <ion-card class="cardExplicando">
+        <ion-card class="cardExplicando" style="height: 120%;">
           <ion-grid>
             <ion-row>
-              <ion-col style="text-align: center">
-                <h6>Privacidade online</h6>
+              <ion-col style="padding-left: 6%;">
+                <h5 style="font-weight: 600; color:#373737">Privacidade online</h5>
               </ion-col>
+
               <ion-col style="display: flex; justify-content: end">
                 <img
                   alt="Silhouette of mountains"
@@ -220,7 +238,7 @@ color: #1B1B1B;
 
             <ion-card-content>
               <ion-card-subtitle
-                >51% dos adolescentes usam o Facebook. O Qustodio ajuda você a
+                >51% dos adolescentes usam o Facebook. A Nino ajuda você a
                 garantir que eles não compartilhem informações pessoais ou
                 troquem mensagens inadequadas com estranhos.</ion-card-subtitle
               >
@@ -230,17 +248,17 @@ color: #1B1B1B;
       </ion-col>
 
       <ion-col>
-        <ion-card class="cardExplicando">
+        <ion-card class="cardExplicando" style="height: 120%;">
           <ion-grid>
             <ion-row>
-              <ion-col style="text-align: center">
-                <h6>Sedentarismo</h6>
+              <ion-col style="padding-left: 6%;">
+                <h5 style="font-weight: 600; color:#373737">Sedentarismo</h5>
               </ion-col>
               <ion-col style="display: flex; justify-content: end">
                 <img
                   alt="Silhouette of mountains"
                   src="/assets/img/porque/Group 239274.svg"
-                  style="width: 50%; height: 70%"
+                  style="width: 60%; height: 70%"
                 />
               </ion-col>
             </ion-row>
@@ -258,17 +276,17 @@ color: #1B1B1B;
       </ion-col>
 
       <ion-col>
-        <ion-card class="cardExplicando">
+        <ion-card class="cardExplicando" style="height: 120%;">
           <ion-grid>
             <ion-row>
-              <ion-col style="text-align: center">
-                <h6>Problemas de saúde mental</h6>
+              <ion-col style="padding-left: 6%;">
+                <h5 style="font-weight: 600; color:#373737; ">Problemas de saúde mental</h5>
               </ion-col>
               <ion-col style="display: flex; justify-content: end">
                 <img
                   alt="Silhouette of mountains"
                   src="/assets/img/porque/Group 239275.svg"
-                  style="width: 50%; height: 70%"
+                  style="width: 40%; height: 70%"
                 />
               </ion-col>
             </ion-row>
@@ -276,7 +294,7 @@ color: #1B1B1B;
             <ion-card-content>
               <ion-card-subtitle
                 >A depressão severa aumentou 58% desde 2010, coincidindo com um
-                aumento na posse de telefones celulares. O Qustodio pode
+                aumento na posse de telefones celulares. A Nino pode
                 ajudá-lo a limitar a quantidade de tempo que seu filho passa na
                 frente das telas.</ion-card-subtitle
               >
@@ -288,11 +306,11 @@ color: #1B1B1B;
 
     <ion-row>
       <ion-col>
-        <ion-card class="cardExplicando">
+        <ion-card class="cardExplicando" style="height: 110%;">
           <ion-grid>
             <ion-row>
-              <ion-col style="text-align: center">
-                <h6>Vício em jogos online</h6>
+              <ion-col style="padding-left: 6%;">
+                <h5 style="font-weight: 600; color:#373737">Vício em jogos online</h5>
               </ion-col>
               <ion-col style="display: flex; justify-content: end">
                 <img
@@ -314,11 +332,11 @@ color: #1B1B1B;
       </ion-col>
 
       <ion-col>
-        <ion-card class="cardExplicando">
+        <ion-card class="cardExplicando" style="height: 110%;">
           <ion-grid>
             <ion-row>
-              <ion-col style="text-align: center">
-                <h6>Problemas de sono</h6>
+              <ion-col style="padding-left: 6%;">
+                <h5 style="font-weight: 600; color:#373737">Problemas de sono</h5>
               </ion-col>
               <ion-col style="display: flex; justify-content: end">
                 <img
@@ -333,7 +351,7 @@ color: #1B1B1B;
               <ion-card-subtitle
                 >73% dos alunos do ensino médio não dormem o suficiente. Isso
                 pode levar a dificuldades de aprendizagem, mau humor e conflitos
-                interpessoais. Use o Qustodio para definir horas de descanso
+                interpessoais. Use a Nino para definir horas de descanso
                 antes de dormir, para que seus filhos possam evitar a luz azul
                 que perturba o sono.</ion-card-subtitle
               >
@@ -343,11 +361,11 @@ color: #1B1B1B;
       </ion-col>
 
       <ion-col>
-        <ion-card class="cardExplicando">
+        <ion-card class="cardExplicando" style="height: 110%;">
           <ion-grid>
             <ion-row>
-              <ion-col style="text-align: center">
-                <h6>Predadores online</h6>
+              <ion-col style="padding-left: 6%;">
+                <h5 style="font-weight: 600; color:#373737">Predadores online</h5>
               </ion-col>
               <ion-col style="display: flex; justify-content: end">
                 <img
@@ -361,7 +379,7 @@ color: #1B1B1B;
             <ion-card-content>
               <ion-card-subtitle
                 >50% das vítimas de exploração online têm entre 12 e 15 anos. Os
-                artigos de orientação do Qustodio ajudam você a conversar com
+                artigos de orientação da Nino ajudam você a conversar com
                 seus filhos sobre como localizar e evitar ladrões de dados,
                 aliciadores, predadores sexuais e
                 perseguidores.</ion-card-subtitle
@@ -372,17 +390,17 @@ color: #1B1B1B;
       </ion-col>
 
       <ion-col>
-        <ion-card class="cardExplicando">
+        <ion-card class="cardExplicando" style="height: 110%;">
           <ion-grid>
             <ion-row>
-              <ion-col style="text-align: center">
-                <h6>Cyberbullying</h6>
+              <ion-col style="padding-left: 6%;">
+                <h5 style="font-weight: 600; color:#373737">Cyberbullying</h5>
               </ion-col>
               <ion-col style="display: flex; justify-content: end">
                 <img
                   alt="Silhouette of mountains"
                   src="/assets/img/porque/Group 239279.svg"
-                  style="width: 50%; height: 70%"
+                  style="width: 60%; height: 70%"
                 />
               </ion-col>
             </ion-row>

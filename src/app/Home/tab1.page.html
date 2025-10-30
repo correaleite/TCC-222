@@ -158,9 +158,9 @@ color: #1B1B1B;
 </ion-toolbar>
 
 <ion-content [fullscreen]="true">
-  <div style="margin-bottom: 35%">
-    <div style="justify-content: center; display: flex; margin-top: 125px">
-      <h1 style="font-size: 260%; font-weight: bold; color: #1B1B1B;">O melhor para o futuro de sua criança<br><div style="color:#44A96B ;">controle parental <kbd style="color: #1B1B1B;">e</kbd> minimalismo digital </div></h1>
+  <div style="margin-bottom: 26%">
+    <div style="justify-content: center; display: flex; margin-top: 30px">
+      <h1 style="font-size: 260%; font-weight: bold; color: #1B1B1B;">O melhor para o futuro da sua criança<br><div style="color:#44A96B ;">controle parental <kbd style="color: #1B1B1B;">e</kbd> minimalismo digital </div></h1>
     </div>
     <br />
 
@@ -173,6 +173,7 @@ color: #1B1B1B;
         Veja nossos planos
       </ion-button>
     </div>
+
 
     <div style="justify-content: center; display: flex; margin-top: 2%;">
       <ion-row>
@@ -191,8 +192,21 @@ color: #1B1B1B;
 
             </ion-row>
     </div>
+<ion-col style="display: flex; justify-content: start; margin-top:-20%; position:absolute">
+      <ion-img
+              src="/assets/img/Home/mulherCapa.png"
+              alt="celular"
+              style=" width: 32%"
+            ></ion-img>
+</ion-col>
 
-    <br /><br />
+<ion-col style="display: flex; justify-content: end; margin-top:-11%; position:absolute">
+      <ion-img
+              src="/assets/img/Home/celularCapa.png"
+              alt="celular"
+              style=" width: 32%"
+            ></ion-img>
+</ion-col>
   </div>
 
 
@@ -200,7 +214,7 @@ color: #1B1B1B;
   <!--Texto imagens-->
   <div class="grupoImgText">
     <div class="grupoTextoImgaem" style="background-color: #F8F8F8; ">
-    <div class="Header_body" ><h1 style="font-size: 30px; color:#373737; margin-top: 8%;"><strong>“Nada melhor do que uma família unida”</strong></h1></div>
+    <div class="Header_body" ><h1 style="font-size: 33px; color:#373737; margin-top: 8%;"><strong>“Nada melhor do que uma família unida”</strong></h1></div>
   <br />
     <div class="img1Text1" style=" padding: 5%;">
       <ion-grid>
@@ -364,7 +378,7 @@ color: #1B1B1B;
                 >
                 </ion-icon>
               </ion-item>
-              <div class="ion-padding" slot="content">First Content</div>
+              <div class="ion-padding" slot="content">Defina quais aplicativos e jogos podem ser usados e por quanto tempo. Assim, você evita distrações e incentiva um uso mais consciente dos dispositivos.</div>
             </ion-accordion>
 
             <ion-accordion value="second" class="accordionHome">
@@ -381,7 +395,7 @@ color: #1B1B1B;
                 >
                 </ion-icon>
               </ion-item>
-              <div class="ion-padding" slot="content">Second Content</div>
+              <div class="ion-padding" slot="content">Promova momentos de foco e descanso com o modo Minimalismo digital, que reduz o uso excessivo de telas e incentiva atividades fora do mundo virtual.</div>
             </ion-accordion>
 
             <ion-accordion value="third" class="accordionHome">
@@ -398,7 +412,7 @@ color: #1B1B1B;
                 >
                 </ion-icon>
               </ion-item>
-              <div class="ion-padding" slot="content">Third Content</div>
+              <div class="ion-padding" slot="content">Acompanhe o tempo de uso, aplicativos acessados e histórico de navegação. Tenha uma visão completa dos hábitos digitais do seu filho e tome decisões com base em dados reais.</div>
             </ion-accordion>
 
             <ion-accordion value="fourth" class="accordionHome">
@@ -416,7 +430,7 @@ color: #1B1B1B;
                 </ion-icon>
               </ion-item>
 
-              <div class="ion-padding" slot="content">Fourth Content</div>
+              <div class="ion-padding" slot="content">Mostra a localização dos membros da família em tempo real, permitindo definir zonas seguras e receber alertas automáticos quando alguém entra ou sai delas.</div>
             </ion-accordion>
 
              <ion-accordion value="fifth" class="accordionHome">
@@ -433,7 +447,7 @@ color: #1B1B1B;
                 >
                 </ion-icon>
               </ion-item>
-              <div class="ion-padding" slot="content">Fifth Content</div>
+              <div class="ion-padding" slot="content">Em situações emergenciais, possibilita o acesso remoto à câmera e ao microfone do dispositivo para verificar o ambiente e garantir a segurança da criança.</div>
             </ion-accordion>
 
  <ion-accordion value="seventh" class="accordionHome">
@@ -450,7 +464,7 @@ color: #1B1B1B;
                 >
                 </ion-icon>
               </ion-item>
-              <div class="ion-padding" slot="content">seventh Content</div>
+              <div class="ion-padding" slot="content">Bloqueia automaticamente sites e aplicativos inapropriados, oferecendo uma navegação mais segura e adequada à idade das crianças.</div>
             </ion-accordion>
              <ion-accordion value="sixth" class="accordionHome">
               <ion-item
@@ -466,7 +480,7 @@ color: #1B1B1B;
                 >
                 </ion-icon>
               </ion-item>
-              <div class="ion-padding" slot="content">sixth Content</div>
+              <div class="ion-padding" slot="content">Envia relatórios de uso, alertas em tempo real e mensagens SOS em caso de emergência, mantendo pais e responsáveis sempre informados e preparados para agir.</div>
             </ion-accordion>
           </ion-accordion-group>
         </ion-col>
@@ -496,19 +510,25 @@ color: #1B1B1B;
 
 
   <!--Cards dos Pais-->
-  <div class="cardsPaiscomTitulo" style="background-color:#F7F7F7;">
+  <div class="cardsPaiscomTitulo" style="background-color:#F7F7F7; ">
     <div class="titulo_cardsPais" style="padding-bottom:2%; padding-top: 3%;"><h2 style="font-size:30px; font-weight: 800; color:#373737;">O que os outros pais acharam?</h2></div>
     <ion-grid>
       <ion-row>
         <ion-col>
           <div class="cardPais">
-            <ion-card style="width: 80%; display: relative; margin: 0px auto; padding:4%; background-color:#F7FFF6; padding-bottom: 20%;">
+            <ion-card style="width: 74%; display: relative; margin: 0px auto; padding:4%; background-color:#F7FFF6; padding-bottom: 20%;">
               <img
                 alt="Silhouette of mountains"
                 src="/assets/img/Home/Group 239258.svg"
                 style="margin-top: -5%;"
-
               />
+
+              <img
+                alt="Silhouette of mountains"
+                src="/assets/img/icons/Quote Icon.svg"
+                style="width: 17%; margin-left: 3%;"
+              />
+
 
               <ion-card-content style="font-size: medium; color: #1B1B1B;">
            A Nino é uma aplicativo incrivel que faz oque diz!
@@ -519,10 +539,16 @@ color: #1B1B1B;
 
          <ion-col>
           <div class="cardPais">
-            <ion-card style="width: 84%; display: relative; margin: 0px auto; padding:4%; background-color:#F7FFF6;">
+            <ion-card style="width: 82%; display: relative; margin: 0px auto; padding:4%; background-color:#F7FFF6;">
               <img
                 alt="Silhouette of mountains"
                 src="/assets/img/Home/Group 239258 (1).svg"
+              />
+
+                <img
+                alt="Silhouette of mountains"
+                src="/assets/img/icons/Quote Icon.svg"
+                style="margin-top:-6%; width: 17%; margin-left: 3%;"
               />
 
               <ion-card-content  style="font-size: medium; color: #1B1B1B;">
@@ -533,11 +559,17 @@ color: #1B1B1B;
         </ion-col>
 
         <ion-col>
-          <div class="cardPais">
-            <ion-card style="width: 80%; display: relative; margin: 0px auto; padding:4%; background-color:#F7FFF6;  padding-bottom: 16%;">
+          <div class="cardPais" >
+            <ion-card style="width: 79%; display: relative; margin: 0px auto; padding:4%; background-color:#F7FFF6;  padding-bottom: 16%;">
               <img
                 alt="Silhouette of mountains"
                 src="/assets/img/Home/Group 239258 (2).svg"
+              />
+
+                <img
+                alt="Silhouette of mountains"
+                src="/assets/img/icons/Quote Icon.svg"
+                style="margin-top:-6%;  width: 17%; margin-left: 3%;"
               />
 
               <ion-card-content  style="font-size: medium; color: #1B1B1B;">

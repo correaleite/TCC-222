@@ -52,6 +52,10 @@ color: #1B1B1B;
     font-size: 30px;
   }
 
+  .titulojuntar{
+    font-size: 40px;
+  }
+
   .titulo_imagens {
     padding-left: 113px;
     margin-bottom: -2%;
@@ -96,6 +100,7 @@ color: #1B1B1B;
   --background-hover: #164327;
   --background-activated: #88f4be;
   --background-focused: #88f4be;
+
 
 
 }
@@ -156,32 +161,32 @@ color: #1B1B1B;
 </ion-toolbar>
 
 <ion-content [fullscreen]="true">
-  <ion-label style="display: flex; margin-top: 8%; justify-content: center;" >
-<strong> <h1>Como se juntar a nós?</h1></strong>
+  <ion-label style="display: flex; margin-top: 3%; justify-content: center;" >
+<strong> <h1 class="titulojuntar" style="color: #373737">Como se juntar a nós?</h1></strong>
   </ion-label>
 
-  <ion-grid style="text-align: center;">
+  <ion-grid style="text-align: center; margin-top: 3%; justify-content: center; display: flex;">
     <ion-row>
       <ion-col>
-        <ion-button shape="round">Como criar sua Conta</ion-button>
+        <ion-button class="botaoCheio" shape="round">Como criar sua Conta</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button shape="round">Como conectar</ion-button>
+        <ion-button class="botaoCheio" shape="round">Como conectar</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button shape="round">Crie sua conta hoje!</ion-button>
+        <ion-button  class="botaoCheio"  shape="round">Crie sua conta hoje!</ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>
 <br><br><br>
-  <ion-grid>
+  <ion-grid style="margin-top: -3%;">
     <ion-row>
       <ion-col>
-        <div class="titulo_imagens"><h2>Filhos</h2></div>
+        <div class="titulo_imagens"><h2 style="font-weight: 600;">Filhos</h2></div>
         <div class="texto_imagens">
           <h3>Aplicativo para as crianças</h3>
         </div>
-<ion-grid>
+<ion-grid >
   <ion-row>
     <ion-col>
         <ion-accordion-group>
@@ -191,7 +196,7 @@ color: #1B1B1B;
                 color="light"
                 style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px"
               >
-                <ion-label style="display: flex; align-items: center; color: #222222;"><ion-icon name="shield-half-outline" style="padding-right: 7%;"></ion-icon>Bloqueio de jogos e aplicativos</ion-label>
+                <ion-label style="display: flex; align-items: center; color: #222222;"><ion-icon name="logo-android" style="padding-right: 7%;"></ion-icon>Android</ion-label>
                 <ion-icon
                   class="ion-accordion-toggle-icon custom-icon"
                   name="caret-down"
@@ -199,7 +204,9 @@ color: #1B1B1B;
                 >
                 </ion-icon>
               </ion-item>
-              <div class="ion-padding" slot="content">First Content</div>
+              <div class="ion-padding" slot="content"> <ion-col class="download">
+            <ion-button class="botaoCheio" size="medium" ><div style="color: #F8F8F8; ">Download</div></ion-button>
+          </ion-col></div>
             </ion-accordion>
 
 
@@ -209,7 +216,7 @@ color: #1B1B1B;
                 color="light"
                 style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px"
               >
-                <ion-label style="display: flex; align-items: center; color: #222222;"><ion-icon name="shield-half-outline" style="padding-right: 7%;"></ion-icon>Bloqueio de jogos e aplicativos</ion-label>
+                <ion-label style="display: flex; align-items: center; color: #222222;"><ion-icon name="logo-apple" style="padding-right: 7%;"></ion-icon>Iphone/Ipad</ion-label>
                 <ion-icon
                   class="ion-accordion-toggle-icon custom-icon"
                   name="caret-down"
@@ -227,7 +234,7 @@ color: #1B1B1B;
                 color="light"
                 style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px"
               >
-                <ion-label style="display: flex; align-items: center; color: #222222;"><ion-icon name="shield-half-outline" style="padding-right: 7%;"></ion-icon>Bloqueio de jogos e aplicativos</ion-label>
+                <ion-label style="display: flex; align-items: center; color: #222222;"><ion-icon name="logo-windows" style="padding-right: 7%;"></ion-icon>Windows</ion-label>
                 <ion-icon
                   class="ion-accordion-toggle-icon custom-icon"
                   name="caret-down"
@@ -246,7 +253,7 @@ color: #1B1B1B;
       </ion-grid>
       </ion-col>
       <ion-col>
-        <img src="/assets/img/comecando/Group 239304.svg" alt="img1home" />
+        <img src="/assets/img/comecando/Group 239304.svg" alt="img1home" style="width: 80%;"/>
       </ion-col>
     </ion-row>
   </ion-grid>
@@ -259,32 +266,70 @@ color: #1B1B1B;
         <img src="/assets/img/comecando/Group 239306.svg" alt="img1home" />
       </ion-col>
       <ion-col>
-        <div class="titulo_imagens"><h2>Pais</h2></div>
+        <div class="titulo_imagens"><h2 style="font-weight: 600;">Pais</h2></div>
         <div class="texto_imagens">
           <h3>Interface para os responsáveis</h3>
         </div>
 <ion-grid>
   <ion-row>
     <ion-col>
-        <ion-accordion-group>
-        <ion-accordion value="first">
-            <ion-item slot="header" color="light">
-              <ion-label>First Accordion</ion-label>
-            </ion-item>
-            <div class="ion-padding" slot="content">First Content</div>
-          </ion-accordion>
-          <ion-accordion value="second">
-            <ion-item slot="header" color="light">
-              <ion-label>Second Accordion</ion-label>
-            </ion-item>
-            <div class="ion-padding" slot="content">Second Content</div>
-          </ion-accordion>
-          <ion-accordion value="third">
-            <ion-item slot="header" color="light">
-              <ion-label>Third Accordion</ion-label>
-            </ion-item>
-            <div class="ion-padding" slot="content">Third Content</div>
-          </ion-accordion>
+                <ion-accordion-group>
+      <ion-accordion value="first" class="accordionHome">
+              <ion-item
+                slot="header"
+                color="light"
+                style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px"
+              >
+                <ion-label style="display: flex; align-items: center; color: #222222;"><ion-icon name="logo-android" style="padding-right: 7%;"></ion-icon>Android</ion-label>
+                <ion-icon
+                  class="ion-accordion-toggle-icon custom-icon"
+                  name="caret-down"
+                  slot="end"
+                >
+                </ion-icon>
+              </ion-item>
+              <div class="ion-padding" slot="content"> <ion-col>
+            <ion-button class="botaoCheio" size="medium" ><div style="color: #F8F8F8; ">Download</div></ion-button>
+          </ion-col></div>
+            </ion-accordion>
+
+
+          <ion-accordion value="second" class="accordionHome">
+              <ion-item
+                slot="header"
+                color="light"
+                style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px"
+              >
+                <ion-label style="display: flex; align-items: center; color: #222222;"><ion-icon name="logo-apple" style="padding-right: 7%;"></ion-icon>Iphone/Ipad</ion-label>
+                <ion-icon
+                  class="ion-accordion-toggle-icon custom-icon"
+                  name="caret-down"
+                  slot="end"
+                >
+                </ion-icon>
+              </ion-item>
+              <div class="ion-padding" slot="content">First Content</div>
+            </ion-accordion>
+
+
+       <ion-accordion value="third" class="accordionHome">
+              <ion-item
+                slot="header"
+                color="light"
+                style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px"
+              >
+                <ion-label style="display: flex; align-items: center; color: #222222;"><ion-icon name="logo-windows" style="padding-right: 7%;"></ion-icon>Windows</ion-label>
+                <ion-icon
+                  class="ion-accordion-toggle-icon custom-icon"
+                  name="caret-down"
+                  slot="end"
+                >
+                </ion-icon>
+              </ion-item>
+              <div class="ion-padding" slot="content">First Content</div>
+            </ion-accordion>
+
+
         </ion-accordion-group>
 </ion-col>
         </ion-row>
@@ -292,10 +337,134 @@ color: #1B1B1B;
       </ion-col>
     </ion-row>
   </ion-grid>
-<br><br>
 
 
-<br><br>
+<div style=" justify-content: center; text-align: center;">
+<ion-grid>
+  <h3 style="margin-top: 10%; font-size: 35px; color: #373737;"><strong>Crie sua Conta</strong></h3>
+  <ion-row>
+    <ion-col style=" margin-left: 10%; margin-top: 5%;">
+
+      <ion-card >
+        <ion-card-content>
+<ion-list style="font-size: 170%; color:#2B2B2B; ">
+  <ul>
+<li > <h4 style="font-weight: 500; font-size: 20px;">Toque em “Cadastrar”
+</h4>
+</li><br>
+<li ><h4 style="font-weight: 500; font-size: 20px;"> Escolha se você é Responsável/Pai ou Filho
+</h4>
+</li><br>
+
+<li ><h4 style="font-weight: 500; font-size: 20px;"> Insira seu e-mail, nome completo e crie uma senha segura
+</h4>
+</li><br>
+
+<li ><h4 style="font-weight: 500;font-size: 20px;"> Aceite os termos de uso e política de privacidade
+</h4>
+</li><br>
+<li > <h4 style="font-weight: 500; font-size: 20px;">Toque em “Adicionar Perfil”
+</h4>
+</li><br>
+<li ><h4 style="font-weight: 500; font-size: 20px;">Escolha um nome, idade e tipo de perfil (criança, adolescente, adulto)
+</h4>
+</li><br>
+
+<h2 style=" padding-left: 4%;">Pronto! Agora defina e customize sua necessidades.</h2>
+
+
+ </ul>
+</ion-list>
+</ion-card-content>
+</ion-card>
+    </ion-col>
+<ion-col>
+  <img src="/assets/img/Home/Group 239230.svg" alt="">
+</ion-col>
+  </ion-row>
+</ion-grid>
+</div>
+
+<ion-grid style="margin-top: 5%; margin-left: 7%;">
+    <ion-row>
+         <ion-col>
+        <img src="/assets/img/comecando/Group 239261.svg" alt="img1home" />
+      </ion-col>
+      <ion-col>
+
+<ion-grid>
+  <ion-row>
+    <ion-col style="margin-top: 20%;">
+<ion-list >
+  <ul>
+
+<li > <h4 style="font-weight: 300;">Toque em “Adicionar Perfil”
+</h4>
+</li> <br>
+<li ><h4 style="font-weight: 300;">Escolha um nome, idade e tipo de perfil (criança, adolescente, adulto)
+</h4>
+</li> <br>
+
+<h2 style="font-weight: bold; font-size: 23px; width: 400px;">Pronto! Agora defina e customize sua necessidades.</h2>
+
+ </ul>
+</ion-list>
+</ion-col>
+        </ion-row>
+      </ion-grid>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+   <ion-footer>
+    <div >
+      <ion-grid style="display: flex; justify-content:  start; padding: 5%; margin-top: 10%;">
+        <ion-list>
+          <ion-row>
+            <ion-col>
+             <ul> <h4><strong>Empresa</strong></h4></ul>
+              <ul>
+                <h6>Sobre Nós</h6>
+              </ul>
+              <ul>
+               <h6> Contate-nos</h6>
+              </ul>
+            </ion-col>
+            <ion-col>
+             <ul> <h4><strong>Produto</strong></h4></ul>
+           <ul >
+             <ion-button fill="clear" routerLink="/porque">
+               <h6>Porque</h6>
+             </ion-button>
+           </ul>
+           <ul >
+             <ion-button fill="clear" routerLink="/recursos">
+               <h6>Recursos</h6>
+             </ion-button>
+           </ul>
+           <ul >
+             <ion-button fill="clear" routerLink="/comecando">
+               <h6>Começando</h6>
+             </ion-button>
+           </ul>
+           <ul >
+             <ion-button fill="clear" routerLink="/precos">
+               <h6>Preços</h6>
+             </ion-button>
+           </ul>
+        </ion-col>
+          </ion-row>
+        </ion-list>
+      </ion-grid>
+
+<ion-item style="display: inline; text-align: start;">
+  <ion-label>
+2025 Todos direitos reservados / Fiap School
+  </ion-label>
+</ion-item>
+    </div>
+  </ion-footer>
+
 
 
 </ion-content>

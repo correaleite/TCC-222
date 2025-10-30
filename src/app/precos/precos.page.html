@@ -1,82 +1,99 @@
 <style>
-  .cardPrecos{
-    width: 90%;
 
+
+
+ .navbar {
+    display: flex;
+    align-items: row;
   }
 
-.background-image{
-    --background: url('/assets/img/precos/Vetores do fundo.png')  no-repeat center center / cover;
-    background-color: white;
-    font-family: inherit;
-}
-
-  h5 {
-    font-size: 24px;
+  .Header_body {
+    display: flex;
+    justify-content: center;
   }
 
-  .header_menu{
+  .img1Text1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  ion-accordion::part(header) {
+    padding: 8px; /* Adjust padding */
+  }
+
+  ion-accordion::part(content) {
+    padding-left: 16px; /* Adjust padding */
+  }
+
+  ion-accordion-group {
+    ion-accordion {
+      ion-accordion-toggle-icon {
+        color: green;
+      }
+    }
+  }
+
+  ion-accordion-group {
+    padding-left: 105px;
+    ion-accordion {
+      width: 98%;
+      ion-label {
+        padding: 8px;
+        font-size: 20px;
+      }
+    }
+  }
+
+.header_menu{
 color: #1B1B1B;
 }
 
-  .title1 {
-  text-align: center;
-  width: 100%;
-  justify-content: center;
-  display: flex;
-  padding-bottom: 1%;
-  padding-top: 1%;
-  font-size: 40px;
+  .titulo_imagens_accordion_topo {
+    padding-left: 113px;
+    font-weight: 100;
+    font-size: 30px;
   }
 
-.title2 {
-color:black;
-font-size:48px;
-}
+  .titulo_imagens {
+    padding-left: 113px;
+    margin-bottom: -2%;
 
-.title3 {
-  font-size: 40px;
-}
+  }
+   .texto_imagens {
+    padding-left: 113px;
+  }
 
-  .grupoCardsPrecos{
+  .titulo_imagens_accordion {
+    padding-left: 113px;
+    font-weight: 900;
+    font-size: 30px;
+  }
+  .texto_imagens_accordion {
+    padding-left: 113px;
+    font-weight: 100;
+    font-size: 20px;
+  }
+
+  .custom-icon {
+    color: #4cbe78;
+  }
+
+  .titulo_cardsPais {
     display: flex;
     justify-content: center;
-    margin-left: 12%;
-    margin-right: 12%;
   }
 
-  .topoCard{
-    display: flex;
-    flex-direction: column;
+   .botaoTrans {
+  --background: white;
+  --background-hover: #164327;
+  --background-activated: #88f4be;
+  --background-focused: #88f4be;
+  border: solid;
+  border-color: #4cbe78;
 
-  }
-
-.discount {
-text-decoration: line-through;
 }
 
-.card1 {
-  align-items: center;
-}
-
-.linha {
-  height: 1px;
-  background-color: #ccc;
-  margin: 8px 0;
-  width: 100%;
-}
-
-.certinhos{
-  width: 7%;
-  height: 7%;
-}
-
-.button1 {
-  font-size: 28px;
-  color: black;
-}
-
-
-.botaoCheio {
+ .botaoCheio {
   --background: #4cbe78;
   --background-hover: #164327;
   --background-activated: #88f4be;
@@ -140,18 +157,18 @@ text-decoration: line-through;
 
 <ion-content [fullscreen]="true"  class="background-image">
 
-  <ion-title class="title1">Lorem ipsum dolor sit amet consectetur.
-Nec eu sed nunc faucibus dictumst magna </ion-title>
-
+  <div style="text-align: center; margin-top: 160px; font-size: 260%; font-weight: bold;">
+  <ion-title class="title1" ><h1 style="font-size: 29px; font-weight: 600;">Confira nossos planos para voce ter a melhor experiência possível </h1></ion-title>
+</div>
 
 <!--CardsPrecos-->
-<ion-grid class="grupoCardsPrecos">
+<ion-grid class="grupoCardsPrecos" style="padding: 15%;">
 <ion-row>
 <ion-col>
 <ion-card class="cardPrecos">
 <ion-card-header>
 <ion-card-title><ion-row>
-<img src="/assets/img/precos/Cadeado.png">
+<img src="/assets/img/preco/image 41.svg">
 <h2>Basico</h2>
 </ion-row></ion-card-title>
 <div class="linha"></div>
@@ -162,23 +179,32 @@ Nec eu sed nunc faucibus dictumst magna </ion-title>
   <ion-card-content>
 <ion-item-group>
 <ion-item lines="none"><ion-thumbnail slot="start" class="certinhos" >
-<img src="assets/img/precos/Check.png"/>
+<img src="/assets/img/preco/Check Mark.svg"/>
 </ion-thumbnail>Bloqueio de jogos e aplicativos</ion-item>
 <ion-item lines="none"><ion-thumbnail slot="start" class="certinhos">
-<img src="assets/img/precos/Check.png"/>
-</ion-thumbnail>Monitoramento de redes sociais</ion-item>
+<img src="/assets/img/preco/Check Mark.svg"/>
+</ion-thumbnail>Botão de pânico</ion-item>
 <ion-item lines="none"><ion-thumbnail slot="start" class="certinhos">
-<img src="assets/img/precos/Check.png"/>
+<img src="/assets/img/preco/Check Mark.svg"/>
 </ion-thumbnail>Limites de tempo diário</ion-item>
 <ion-item lines="none"><ion-thumbnail slot="start" class="certinhos">
-<img src="assets/img/precos/Check.png"/>
+<img src="/assets/img/preco/Check Mark.svg"/>
 </ion-thumbnail>Filtro de conteúdo</ion-item>
 <ion-item lines="none"><ion-thumbnail slot="start" class="certinhos">
-<img src="assets/img/precos/Check.png"/>
+<img src="/assets/img/preco/Check Mark.svg"/>
 </ion-thumbnail>Monitoramento de localização</ion-item>
 <ion-item lines="none"><ion-thumbnail slot="start" class="certinhos">
-<img src="assets/img/precos/Check.png"/>
-</ion-thumbnail>Controle de compra</ion-item>
+<img src="/assets/img/preco/Check Mark.svg"/>
+</ion-thumbnail>Controle de Compras</ion-item>
+<ion-item lines="none"><ion-thumbnail slot="start" class="certinhos">
+<img src="/assets/img/preco/Check Mark.svg"/>
+</ion-thumbnail>Modo foco</ion-item>
+<ion-item lines="none"><ion-thumbnail slot="start" class="certinhos">
+<img src="/assets/img/preco/Check Mark.svg"/>
+</ion-thumbnail>Desafio de detox digitak</ion-item>
+<ion-item lines="none"><ion-thumbnail slot="start" class="certinhos">
+<img src="/assets/img/preco/Check Mark.svg"/>
+</ion-thumbnail>Alerta de Excesso de uso</ion-item>
 </ion-item-group>
 </ion-card-content>
 </ion-card>
@@ -188,18 +214,22 @@ Nec eu sed nunc faucibus dictumst magna </ion-title>
 <ion-card-header>
 <ion-item class="topoCard">
 
-      <ion-col>
+<ion-col>
 <ion-card-title><ion-row>
-<img src="/assets/img/precos/Cadeado.png">
+<img src="/assets/img/preco/image 41.svg">
 <h2>Completo</h2>
 </ion-row></ion-card-title>
 <div class="linha"></div>
-<ion-card-title class="AAAAA"><ion-row class="card1"><h3 class="title3">R$192.00/ano</h3>
-<ion-text><ion-col>
-<h5>R$20/mes</h5>
-<h5 class="discount"><i>R$240/ano</i></h5></ion-col>
-</ion-text>
-</ion-row>
+<ion-card-title>
+  <ion-row>
+    <ion-text style="text-align: center;">
+      <h3 style="font-weight: bolder;">R$192.00/ano</h3>
+    </ion-text>
+    <ion-text>
+    <h5>R$20/mês</h5>
+    <h5 style="text-decoration: line-through;"><i>R$240/ano</i></h5>
+    </ion-text>
+  </ion-row>
 </ion-card-title>
 </ion-col>
 
@@ -210,48 +240,23 @@ Nec eu sed nunc faucibus dictumst magna </ion-title>
   <ion-card-content>
 <ion-item-group>
 <ion-item lines="none"><ion-thumbnail slot="start" class="certinhos">
-<img src="assets/img/precos/Check.png"/>
-</ion-thumbnail>Bloqueio de jogos e aplicativos</ion-item>
+<img src="#"/>
+</ion-thumbnail>Tudo da versão grátis+</ion-item>
 <ion-item lines="none"><ion-thumbnail slot="start" class="certinhos">
-<img src="assets/img/precos/Check.png"/>
+<img src="/assets/img/preco/Check Mark.svg"/>
 </ion-thumbnail>Monitoramento de redes sociais</ion-item>
 <ion-item lines="none"><ion-thumbnail slot="start" class="certinhos">
-<img src="assets/img/precos/Check.png"/>
-</ion-thumbnail>Limites de tempo diário</ion-item>
+<img src="/assets/img/preco/Check Mark.svg"/>
+</ion-thumbnail>Detector de acidentes</ion-item>
 <ion-item lines="none"><ion-thumbnail slot="start" class="certinhos">
-<img src="assets/img/precos/Check.png"/>
-</ion-thumbnail>Filtro de conteúdo</ion-item>
+<img src="/assets/img/preco/Check Mark.svg"/>
+</ion-thumbnail>Controle remoto câmera e áudio</ion-item>
 <ion-item lines="none"><ion-thumbnail slot="start" class="certinhos">
-<img src="assets/img/precos/Check.png"/>
-</ion-thumbnail>Monitoramento de localização</ion-item>
-<ion-item lines="none"><ion-thumbnail slot="start" class="certinhos">
-<img src="assets/img/precos/Check.png"/>
-</ion-thumbnail>Controle de compra</ion-item>
-<ion-item lines="none"><ion-thumbnail slot="start" class="certinhos">
-<img src="assets/img/precos/Check.png"/>
-</ion-thumbnail>Controle remote camera e áudio</ion-item>
-<ion-item lines="none"><ion-thumbnail slot="start" class="certinhos">
-<img src="assets/img/precos/Check.png"/>
-</ion-thumbnail>Assistente familiar (tudo)</ion-item>
-<ion-item lines="none"><ion-thumbnail slot="start" class="certinhos">
-<img src="assets/img/precos/Check.png"/>
-</ion-thumbnail>Acompanhar atividades da familia.</ion-item>
-<ion-item lines="none"><ion-thumbnail slot="start" class="certinhos">
-<img src="assets/img/precos/Check.png"/>
-</ion-thumbnail>Atividades em familia com recompensas (missoões,desafios em familia)</ion-item>
-
-            <ion-item lines="none"><ion-thumbnail slot="start" class="certinhos">
-<img src="assets/img/precos/Check.png"/>
-</ion-thumbnail>Meiosde segurança (botão de pânico, detecção de acidentes)</ion-item>
-<ion-item lines="none"><ion-thumbnail slot="start" class="certinhos">
-<img src="assets/img/precos/Check.png"/>
+<img src="/assets/img/preco/Check Mark.svg"/>
 </ion-thumbnail>Capturas de tela automática</ion-item>
 <ion-item lines="none"><ion-thumbnail slot="start" class="certinhos">
-<img src="assets/img/precos/Check.png"/>
-</ion-thumbnail>Função minimalista para o celion-item-groupar (Simplificar todo o celion-item-groupar)</ion-item>
-<ion-item lines="none"><ion-thumbnail slot="start" class="certinhos">
-<img src="assets/img/precos/Check.png"/>
-</ion-thumbnail>Relatórios (com IA e sem)</ion-item>
+<img src="/assets/img/preco/Check Mark.svg"/>
+</ion-thumbnail>Relatórios</ion-item>
 </ion-item-group>
 </ion-card-content>
 </ion-card>
